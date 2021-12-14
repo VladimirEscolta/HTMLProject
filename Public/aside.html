@@ -4,10 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тег "aside"</title>
+    <title>Тег &lt;aside&gt;</title>
+    <script>
+      document.createElement('aside');
+     </script>
+     <style>
+      aside {
+       background: #f0f0f0;
+       padding: 10px;
+       width: 200px;
+       float: right;
+      }
+      article {
+       margin-right: 240px;
+       display: block;
+      }
+     </style>
 </head>
 <body>
-    <h1>Тег 'aside'</h1>
+    <h1>Тег &lt;aside&gt;</h1>
     <h3>Описание</h3>
     <p>
         Определяет блок сбоку от контента для размещения рубрик, ссылок на архив, меток и другой информации. Такой блок, как правило, называется «сайдбар» или «боковая панель».
@@ -15,8 +30,18 @@
     <h3>Атрибуты</h3>
     <table>
       <tr>
-        <td width=100px; align='left'>...</td>
-        <td width=1000px; align='left'> ...</td>
+        <td width=100px>...</td>
+        <td width=400px>
+          &lt;aside&gt;...&lt;/aside&gt;
+        </td>
+        <td width=400px>
+          <aside>
+            <p>Экономьте электричество</p>
+            <p>Хороший язык</p>
+            <p>Чья палка больше</p>
+           </aside>
+        </td>
+        <td width=1000px> ...</td>
       </tr>
     </table>
 

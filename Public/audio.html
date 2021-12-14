@@ -4,39 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тег "audio"</title>
+    <title>Тег &lt;audio&gt;</title>
 </head>
 <body>
-    <h1>Тег 'audio'</h1>
+    <h1>Тег &lt;audio&gt;</h1>
     <h3>Описание</h3>
     <p>
-        Добавляет, воспроизводит и управляет настройками аудиозаписи на веб-странице. Путь к файлу задается через атрибут src или вложенный тег 'source'. Внутри контейнера 'audio' можно написать текст, который будет выводиться в браузерах, не работающих с этим тегом.
+        Добавляет, воспроизводит и управляет настройками аудиозаписи на веб-странице. Путь к файлу задается через атрибут src или вложенный тег &lt;source&gt;. Внутри контейнера &lt;audio&gt; можно написать текст, который будет выводиться в браузерах, не работающих с этим тегом.
     </p>
     <h3>Атрибуты</h3>
     <table>
         <tr>
-            <td width=100px; align='left'>autoplay</td>
-            <td width=1000px; align='left'>Звук начинает играть сразу после загрузки страницы.</td>
+            <td width=100px>autoplay</td>
+            <td width=400px>&lt;audio autoplay="autoplay"&gt;...&lt;/audio&gt;</td>
+            <td width=400px>
+                <audio autoplay>
+                    <source src="../Audio/kamazz-sneg-mp3.mp3" type="audio/mpeg">Тег audio не поддерживается вашим браузером. 
+                    <a href="../Audio/kamazz-sneg-mp3.mp3">Скачайте музыку</a>.
+                </audio>
+            </td>
+            <td width=1000px>При наличии этого атрибута аудио начинает воспроизводиться автоматически после загрузки страницы. Атрибут autoplay отменяет действие preload.</td>
         </tr>
         <tr>
             <td>controls</td>
+            <td>&lt;audio controls="controls"&gt;...&lt;/audio&gt;</td>
+            <td>
+                <audio controls>
+                    <source src="../Audio/kamazz-sneg-mp3.mp3" type="audio/mpeg">Тег audio не поддерживается вашим браузером. 
+                    <a href="../Audio/kamazz-sneg-mp3.mp3">Скачайте музыку</a>.
+                </audio>
+            </td>
             <td>Добавляет панель управления к аудиофайлу.</td>
         </tr>
         <tr>
             <td>loop</td>
+            <td>&lt;audio loop="loop"&gt;...&lt;/audio&gt;</td>
+            <td>
+                <audio autoplay loop>
+                    <source src="../Audio/kamazz-sneg-mp3.mp3" type="audio/mpeg">Тег audio не поддерживается вашим браузером. 
+                    <a href="../Audio/kamazz-sneg-mp3.mp3">Скачайте музыку</a>.
+                </audio>
+            </td>
             <td>Повторяет воспроизведение звука с начала после его завершения.</td>
         </tr>
         <tr>
             <td>preload</td>
-            <td>Используется для загрузки файла вместе с загрузкой веб-страницы.</td>
+            <td>&lt;audio preload="none | metadata | auto"&gt;...&lt;/audio&gt;</td>
+            <td>
+                <audio autoplay preload="metadata">
+                    <source src="../Audio/kamazz-sneg-mp3.mp3" type="audio/mpeg">Тег audio не поддерживается вашим браузером. 
+                    <a href="../Audio/kamazz-sneg-mp3.mp3">Скачайте музыку</a>.
+                </audio>
+            </td>
+            <td>Используется для загрузки аудиофайла вместе с загрузкой веб-страницы. Этот атрибут игнорируется, если установлен autoplay. <br>
+                none - Не загружать аудиофайл. <br>
+                metadata - Загрузить только служебную информацию (продолжительность звучания и др.). <br>
+                auto - Загрузить аудиофайл целиком при загрузке страницы.
+            </td>
         </tr>
         <tr>
             <td>muted</td>
+            <td>&lt;audio muted='muted'&gt;...&lt;/audio&gt;</td>
+            <td>
+                <audio autoplay muted controls>
+                    <source src="../Audio/kamazz-sneg-mp3.mp3" type="audio/mpeg">Тег audio не поддерживается вашим браузером. 
+                    <a href="../Audio/kamazz-sneg-mp3.mp3">Скачайте музыку</a>.
+                </audio>
+            </td>
             <td>Отключает звук при воспроизведении музыки.</td>
         </tr>
         <tr>
             <td>src</td>
-            <td>Указывает путь к воспроизводимому файлу.</td>
+            <td>&lt;audio src="URL"&gt;...&lt;/audio&gt;</td>
+            <td>
+                <audio src="../Audio/kamazz-sneg-mp3.mp3" controls>
+                    Тег audio не поддерживается вашим браузером. 
+                </audio>
+            </td>
+            <td>Указывает путь к воспроизводимому аудиофайлу. Для этой же цели также можно использовать тег &lt;source&gt;.</td>
         </tr>
     </table>
 
