@@ -4,23 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тег "bdi"</title>
+    <title>Тег &lt;bdi&gt;</title>
 </head>
 <body>
-    <h1>Тег 'bdi'</h1>
+    <h1>Тег &lt;bdi&gt;</h1>
     <h3>Описание</h3>
     <p>
-        Элемент 'bdi' указывает фрагмент текста, который должен быть изолирован от изменения направления вывода текста. 
+        Элемент &lt;bdi&gt; указывает фрагмент текста, который должен быть изолирован от изменения направления вывода текста. 
         Такое поведение важно для текстов, одновременно содержащих разные языки, читающихся слева направо и справа налево.
     </p>
     <h3>Атрибуты</h3>
     <table>
         <tr>
-            <td width=100px; align='left'>...</td>
-            <td width=1000px; align='left'>...</td>
+            <td width=100px>...</td>
+            <td width=400px>&lt;bdi&gt;Текст&lt;/bdi&gt;</td>
+            <td width=400px>
+                <p dir="rtl"><bdi>שבת</bdi> — суббота</p>   
+                <p>В ашкеназском произношении звучит как «ша́бос» (идиш «ша́бес»), а в сефардском — как «шаба́т».</p>
+            </td>
+            <td width=1000px>Атрибут dir по умолчанию имеет значение auto.</td>
         </tr>
     </table>
 
+    <h5> 
+        <p> Также для тега доступны <a href="universal attributes.html">Универсальные атрибуты</a> и <a href="developments.html">События</a></p> <br> 
+    </h5>
     <h3> <a href="../Index.html">Вернуться к тегам</a> <br> </h3>
 </body>
 </html>
