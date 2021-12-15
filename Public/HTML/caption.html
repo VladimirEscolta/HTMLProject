@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;caption&gt;</title>
+    
+</head>
+<body>
+    <h1>Тег &lt;caption&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Тег &lt;caption&gt; предназначен для создания заголовка к таблице и может размещаться только внутри контейнера &lt;table&gt;, причем сразу после открывающего тега. Такой заголовок представляет собой текст, по умолчанию отображаемый перед таблицей и описывающий ее содержание.
+    </p>
+    <h3>Атрибуты</h3>
+    <table>
+        <tr>
+            <td width=100px>align</td>
+            <td width=400px>&lt;caption align="left | right | top | bottom"&gt;...&lt;/caption&gt;</td>
+            <td width=400px>
+                <table width="100%" border="1" cellspacing="1" cellpadding="4">
+                    <caption align="top">Пример таблицы</caption>
+                    <tr> 
+                     <th>#</th>
+                     <th>Чебурашка</th>
+                     <th>Крокодил Гена</th>
+                     <th>Шапокляк</th>
+                    </tr>
+                    <tr> 
+                     <td>1</td><td>FXD</td>
+                     <td>URN</td><td>LWK</td>
+                    </tr>
+                </table>
+            </td>
+            <td width=1000px>
+                Атрибут align определяет выравнивание заголовка относительно таблицы. Результат его действия зависит от используемого браузера и установленного значения. <br>
+                <b>left</b> - В браузере Internet Explorer и Opera располагает заголовок сверху и выравнивает его по левому краю таблицы. В Firefox заголовок располагается слева от таблицы. Safari и Chrome игнорируют это значение. <br>
+                <b>right</b>- В браузере Internet Explorer и Opera располагает заголовок сверху таблицы и выравнивает его по правому краю таблицы. В браузере Firefox заголовок располагается от таблицы справа. Safari и Chrome игнорируют это значение. <br>
+                <b>top</b> - Заголовок размещается перед таблицей по ее центру. <br>
+                <b>bottom</b> - Заголовок размещается внизу таблицы по ее центру.
+            </td>
+        </tr>
+        <tr>
+            <td width=100px>valign</td>
+            <td width=400px>&lt;caption valign="bottom | top"&gt;...&lt;/caption&gt;</td>
+            <td width=400px>
+                <table width="60%" border="1" cellspacing="1" cellpadding="4">
+                    <caption align="right" valign="bottom">
+                      Пример таблицы
+                    </caption>
+                    <tr><td>...</td></tr>
+                </table>
+            </td>
+            <td width=1000px>
+                Атрибут valign предназначен для размещения заголовка до таблицы или после нее. Этот атрибут работает только в браузере Internet Explorer, а для всех остальных применяется align. Тем не менее, атрибут align корректно действует и для IE, поэтому сочетание атрибутов align и valign необходимо только для этого браузера, когда требуется одновременное выравнивание заголовка по вертикали и горизонтали.<br>
+                <b>top</b> - Заголовок размещается перед таблицей по ее центру. <br>
+                <b>bottom</b> - Заголовок размещается внизу таблицы по ее центру.
+            </td>
+        </tr>
+    </table>
+
+    <h5> 
+        <p> Также для тега доступны <a href="universal attributes.html">Универсальные атрибуты</a> и <a href="developments.html">События</a></p> <br> 
+    </h5>
+    <h3> <a href="../../Index.html">Вернуться к тегам</a> <br> </h3>
+</body>
+</html>

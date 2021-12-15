@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;canvas&gt;</title>
+    <script> 
+        window.onload = function() {
+         var drawingCanvas = document.getElementById('smile');
+         if(drawingCanvas && drawingCanvas.getContext) {
+          var context = drawingCanvas.getContext('2d');
+          // Рисуем окружность 
+          context.strokeStyle = "#000";
+          context.fillStyle = "#fc0";
+          context.beginPath();
+          context.arc(100,100,50,0,Math.PI*2,true);
+          context.closePath();
+          context.stroke();
+          context.fill();
+          // Рисуем левый глаз 
+          context.fillStyle = "#fff";
+          context.beginPath();
+          context.arc(84,90,8,0,Math.PI*2,true);
+          context.closePath();
+          context.stroke();
+          context.fill();
+          // Рисуем правый глаз 
+          context.beginPath();
+          context.arc(116,90,8,0,Math.PI*2,true);
+          context.closePath();
+          context.stroke();
+          context.fill();
+          // Рисуем рот
+          context.beginPath();
+          context.moveTo(70,115);
+          context.quadraticCurveTo(100,130,130,115);
+          context.quadraticCurveTo(100,150,70,115); 
+          context.closePath();
+          context.stroke();
+          context.fill();
+         }
+        }
+    </script>
+</head>
+<body>
+    <h1>Тег &lt;canvas&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Создает область, в которой при помощи JavaScript можно рисовать разные объекты, выводить изображения, трансформировать их и менять свойства. При помощи тега &lt;canvas&gt; можно создавать рисунки, анимацию, игры и др.
+    </p>
+    <h3>Атрибуты</h3>
+    <table>
+        <tr>
+            <td width=100px>...</td>
+            <td width=400px>&lt;canvas id="идентификатор"&gt;...&lt;/canvas&gt;</td>
+            <td width=400px>
+                <canvas id="smile" width="200" height="200">
+                    <p>Ваш браузер не поддерживает рисование.</p>
+                </canvas>
+            </td>
+            <td width=1000px>
+                height - Задает высоту холста. По умолчанию 300 пикселов. <br>
+                width - Задает ширину холста. По умолчанию 150 пикселов.
+            </td>
+        </tr>
+    </table>
+
+    <h5> 
+        <p> Также для тега доступны <a href="universal attributes.html">Универсальные атрибуты</a> и <a href="developments.html">События</a></p> <br> 
+    </h5>
+    <h3> <a href="../../Index.html">Вернуться к тегам</a> <br> </h3>
+</body>
+</html>
