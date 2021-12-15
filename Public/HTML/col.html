@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;col&gt;</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4505/4505945.png">
+    <style>
+        body {
+            background-color: cornsilk;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;col&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Тег &lt;col&gt; задает ширину и другие характеристики одной или нескольких колонок таблицы. При наличии этого тега браузер начинает показывать содержимое таблицы, не дожидаясь ее полной загрузки. Тег &lt;col&gt; можно использовать совместно с тегом &lt;colgroup&gt;, который задает группу колонок, обладающих общими характеристиками.
+    </p>
+    <h3>Атрибуты</h3>
+    <table>
+        <tr>
+            <td width=100px>align</td>
+            <td width=400px>&lt;col align="left | center | right | justify"&gt;</td>
+            <td width=400px>
+                <table border="1" width="400">
+                    <col align="right">
+                    <col span="3" width="50" align="center">
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                </table>
+            </td>
+            <td width=1000px>Задает выравнивание содержимого колонок по горизонтали. Этот атрибут действует на все ячейки в колонке, в том числе и на заголовки таблицы, которые определяются тегом &lt;th&gt;. Чтобы управлять выравниванием содержимого разных элементов воспользуйтесь стилями или устанавливайте атрибут align для отдельных ячеек таблицы. <br>
+                <b>left</b> - Выравнивание контента по левому краю. <br>
+                <b>center</b> - Выравнивание по центру.<br>
+                <b>right</b> - Выравнивание по правому краю.<br>
+                <b>justify</b> - Выравнивание по левому и правому краю.
+            </td>
+        </tr>
+        <tr>
+            <td>char</td>
+            <td>
+                &lt;table&gt;<br>
+                    &lt;col char="символ"&gt;<br>
+                    &lt;tr&gt;<br>
+                        &lt;td>...&lt;/td&gt;<br>
+                    &lt;/tr&gt;<br>
+                &lt;/table&gt;
+            </td>
+            <td></td>
+            <td>Атрибут char заставляет выравниваться содержимое колонки по заданному символу. Эта возможность может пригодиться для выравнивания колонки чисел по точке. Работает только в том случае, если значение атрибута align установлено как char.</td>
+        </tr>
+        <tr>
+            <td>charoff</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>span</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>valign</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h3> <a href="../../Index.html">Вернуться к тегам</a> <br> </h3>
+</body>
+</html>
