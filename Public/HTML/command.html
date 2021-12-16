@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;command&gt;</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png">
+    <style>
+        body {
+            background-color: cyan;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;command&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Создает команду в виде переключателя, флажка или обычной кнопки. Тег &lt;command&gt; должен располагаться внутри &lt;menu&gt;, в противном случае он не будет показан.
+    </p>
+    <h3>Атрибуты</h3>
+    <table>
+        <tr>
+            <td width=100px>...</td>
+            <td width=400px>
+                &lt;menu&gt; <br>
+                &lt;command параметры&gt; <br>
+                &lt;/menu&gt;
+            </td>
+            <td width=400px>
+                <menu>
+                    <command onclick="alert('Слава роботам!')" label="Выполнить директиву №1">
+                    <command onclick="alert('Сдавайтесь, людишки!')" label="Выполнить директиву №2">
+                    <command onclick="alert('Убить всех человеков!')" label="Выполнить директиву №3">
+                </menu>
+            </td>
+            <td width=1000px>
+                <b>checked</b> - Активирует команду. Доступно только если type установлен как radio или checkbox. <br>
+                <b>disabled</b> - Задает, доступна команда или нет.<br>
+                <b>icon</b> - Адрес картинки, которая показывается как команда.<br>
+                <b>label</b> - Название команды.<br>
+                <b>radiogroup</b> - Задает имя группы переключателей. Доступно только если type установлен как radio.<br>
+                <b>type</b> - Определяет тип команды (checkbox, command, radio). По умолчанию command.
+            </td>
+    </table>
+
+    <h3> <a href="../../Index.html">Вернуться к тегам</a> <br> </h3>
+</body>
+</html>
