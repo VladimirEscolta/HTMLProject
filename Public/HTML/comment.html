@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;comment&gt;</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png">
+    <style>
+        body {
+            background-color: navajowhite;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    </style>
+    <style type="text/css">
+      div {
+       background: green; /* Зеленый цвет фона */
+       color: white; /* Белые буквы */
+       padding: 4px; /* Поля вокруг текста */
+      }
+      div.ie {
+       background: maroon; /* Красный цвет фона */
+      }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;comment&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Добавляет комментарий в код документа. Тег &lt;comment&gt; допустимо использовать только в &lt;body&gt;.
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <caption align="top">
+            <b>Заголовок таблицы</b>
+        </caption>
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>...<!--Тестовый комментарий--></td>
+            <td align="center">&lt;comment&gt;Текст&lt;/comment&gt;</td>
+            <td align="center">
+                <comment><div class="ie">Этот текст не виден в браузере Internet Explorer</div></comment>
+                <div>Этот текст показывается во всех браузерах</div> 
+            </td>
+            <td align="center">Этот тег является нестандартным, для добавления комментариев применяйте конструкцию &lt;!-- Комментарий --&gt;.</td>
+    </table>
+
+    <h3> <a href="../../Index.html">Вернуться к тегам</a> <br> </h3>
+</body>
+</html>
