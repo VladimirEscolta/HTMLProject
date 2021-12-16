@@ -22,17 +22,20 @@
         Теоретически, тег &lt;button&gt; должен располагаться внутри формы, устанавливаемой элементом &lt;form&gt;. Тем не менее, браузеры не выводят сообщение об ошибке и корректно работают с тегом &lt;button&gt;, если он встречается самостоятельно. Однако, если необходимо результат нажатия на кнопку отправить на сервер, помещать &lt;button&gt; в контейнер &lt;form&gt; обязательно.
     </p>
     <h3>Атрибуты</h3>
-    <table>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
         <tr>
-            <td width=100px>accesskey</td>
-            <td width=400px>&lt;button accesskey="клавиша"&gt;...&lt;/button&gt;</td>
-            <td width=400px>
+            <td>accesskey</td>
+            <td>&lt;button accesskey="клавиша"&gt;...&lt;/button&gt;</td>
+            <td>
                 <p><button accesskey="a">Горячая клавиша a</button></p>
                 <p><button accesskey="1">Горячая клавиша 1</button></p>
                 <p><button accesskey="b">Горячая клавиша b</button></p>
                 <p><button accesskey="q">Горячая клавиша q</button></p>
             </td>
-            <td width=1000px>Определяет горячую клавишу, с помощью которой происходит переход фокуса к элементу формы. Браузеры при этом используют различные комбинации клавиш. Например, для accesskey="s" работают следующие сочетания. <br>
+            <td>Определяет горячую клавишу, с помощью которой происходит переход фокуса к элементу формы. Браузеры при этом используют различные комбинации клавиш. Например, для accesskey="s" работают следующие сочетания. <br>
                 Internet Explorer: Alt + S <br>
                 Chrome: Alt + S<br>
                 Opera: Shift + Esc, S<br>

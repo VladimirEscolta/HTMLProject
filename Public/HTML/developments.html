@@ -20,18 +20,21 @@
         Здесь находится описание
     </p>
     <h3>Атрибуты</h3>
-    <table>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
       <tr>
-        <td width=100px>onblur</td>
-        <td width=400px>onblur="скрипт"</td>
-        <td width=400px>
+        <td>onblur</td>
+        <td>onblur="скрипт"</td>
+        <td>
             <form action=""> 
                 <p><input type="text" value="Имя" onblur="alert(this.value)"></p>
                 <p><input type="text" value="Фамилия" onblur="alert(this.value)"></p>
                 <p><input type="text" value="Адрес" onblur="alert(this.value)"></p>
             </form>
         </td>
-        <td width=1000px>Событие onblur возникает при потере элемента фокуса. Это обычно происходит, если щелкнуть на другой элемент текущего документа. Событие onblur противоположно по своему действию событию onfocus.</td>
+        <td>Событие onblur возникает при потере элемента фокуса. Это обычно происходит, если щелкнуть на другой элемент текущего документа. Событие onblur противоположно по своему действию событию onfocus.</td>
       </tr>
       <tr>
           <td>onchange</td>

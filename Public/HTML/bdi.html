@@ -21,15 +21,18 @@
         Такое поведение важно для текстов, одновременно содержащих разные языки, читающихся слева направо и справа налево.
     </p>
     <h3>Атрибуты</h3>
-    <table>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
         <tr>
-            <td width=100px>...</td>
-            <td width=400px>&lt;bdi&gt;Текст&lt;/bdi&gt;</td>
-            <td width=400px>
+            <td>...</td>
+            <td>&lt;bdi&gt;Текст&lt;/bdi&gt;</td>
+            <td>
                 <p dir="rtl"><bdi>שבת</bdi> — суббота</p>   
                 <p>В ашкеназском произношении звучит как «ша́бос» (идиш «ша́бес»), а в сефардском — как «шаба́т».</p>
             </td>
-            <td width=1000px>Атрибут dir по умолчанию имеет значение auto.</td>
+            <td>Атрибут dir по умолчанию имеет значение auto.</td>
         </tr>
     </table>
 

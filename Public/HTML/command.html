@@ -21,22 +21,25 @@
         Создает команду в виде переключателя, флажка или обычной кнопки. Тег &lt;command&gt; должен располагаться внутри &lt;menu&gt;, в противном случае он не будет показан.
     </p>
     <h3>Атрибуты</h3>
-    <table>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
         <tr>
-            <td width=100px>...</td>
-            <td width=400px>
+            <td>...</td>
+            <td>
                 &lt;menu&gt; <br>
                 &lt;command параметры&gt; <br>
                 &lt;/menu&gt;
             </td>
-            <td width=400px>
+            <td>
                 <menu>
                     <command onclick="alert('Слава роботам!')" label="Выполнить директиву №1">
                     <command onclick="alert('Сдавайтесь, людишки!')" label="Выполнить директиву №2">
                     <command onclick="alert('Убить всех человеков!')" label="Выполнить директиву №3">
                 </menu>
             </td>
-            <td width=1000px>
+            <td>
                 <b>checked</b> - Активирует команду. Доступно только если type установлен как radio или checkbox. <br>
                 <b>disabled</b> - Задает, доступна команда или нет.<br>
                 <b>icon</b> - Адрес картинки, которая показывается как команда.<br>

@@ -20,17 +20,20 @@
         Добавляет, воспроизводит и управляет настройками аудиозаписи на веб-странице. Путь к файлу задается через атрибут src или вложенный тег &lt;source&gt;. Внутри контейнера &lt;audio&gt; можно написать текст, который будет выводиться в браузерах, не работающих с этим тегом.
     </p>
     <h3>Атрибуты</h3>
-    <table>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
         <tr>
-            <td width=100px>autoplay</td>
-            <td width=400px>&lt;audio autoplay="autoplay"&gt;...&lt;/audio&gt;</td>
-            <td width=400px>
+            <td>autoplay</td>
+            <td>&lt;audio autoplay="autoplay"&gt;...&lt;/audio&gt;</td>
+            <td>
                 <audio autoplay>
                     <source src="../../Audio/kamazz-sneg-mp3.mp3" type="audio/mpeg">Тег audio не поддерживается вашим браузером. 
                     <a href="../../Audio/kamazz-sneg-mp3.mp3">Скачайте музыку</a>.
                 </audio>
             </td>
-            <td width=1000px>При наличии этого атрибута аудио начинает воспроизводиться автоматически после загрузки страницы. Атрибут autoplay отменяет действие preload.</td>
+            <td>При наличии этого атрибута аудио начинает воспроизводиться автоматически после загрузки страницы. Атрибут autoplay отменяет действие preload.</td>
         </tr>
         <tr>
             <td>controls</td>
