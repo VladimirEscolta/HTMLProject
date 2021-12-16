@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;datalist&gt;</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png">
+    <style>
+        body {
+            background-color: navajowhite;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;datalist&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Создает список вариантов, которые можно выбирать при наборе в текстовом поле. Изначально этот список скрыт и становится доступным при получении полем фокуса или наборе текста.
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <caption align="top">
+            <b>Заголовок таблицы</b>
+        </caption>
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>...</td>
+            <td>
+                &lt;input list="&lt;идентификатор&gt;"&gt; <br>
+                &lt;datalist id="&lt;идентификатор&gt;"&gt;<br>
+                    &lt;option value="Текст1"&gt;<br>
+                    &lt;option value="Текст2"&gt;<br>
+                &lt;/datalist&gt;
+            </td>
+            <td>
+                <p>Выберите автомобиль:</p>
+                <p><input list="auto">
+                    <datalist id="auto">
+                    <option value="Mercedes"></option>
+                    <option value="BMW"></option>
+                    <option value="Aston Martin"></option>
+                    <option value="Lada"></option>
+                    <option value="Renault"></option>
+                </datalist>
+                </p>
+            </td>
+            <td>Список, создаваемый тегом &lt;datalist&gt;, связывается с текстовым полем посредством атрибута id. Его значение должно совпадать со значением атрибута list тега &lt;input&gt;.</td>
+    </table>
+
+    <h3> <a href="../../Index.html">Вернуться к тегам</a> <br> </h3>
+</body>
+</html>
