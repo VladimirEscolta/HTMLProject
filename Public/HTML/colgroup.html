@@ -5,39 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тег &lt;col&gt;</title>
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4505/4505945.png">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3014/3014275.png">
     <style>
         body {
-            background-color: cornsilk;
+            background-color: beige;
             background-repeat: no-repeat;
             background-size: 100%;
         }
     </style>
 </head>
 <body>
-    <h1>Тег &lt;col&gt;</h1>
+    <h1>Тег &lt;colgroup&gt;</h1>
     <h3>Описание</h3>
     <p>
-        Тег &lt;col&gt; задает ширину и другие характеристики одной или нескольких колонок таблицы. При наличии этого тега браузер начинает показывать содержимое таблицы, не дожидаясь ее полной загрузки. Тег &lt;col&gt; можно использовать совместно с тегом &lt;colgroup&gt;, который задает группу колонок, обладающих общими характеристиками.
+        Тег &lt;colgroup&gt; предназначен для задания ширины и стиля одной или нескольких колонок таблицы. Этот тег позволяет уменьшить код таблицы за счет сокращения повторяющихся атрибутов, и при наличии этого тега браузер начинает показывать содержимое таблицы, не дожидаясь ее полной загрузки. Тег &lt;colgroup&gt; можно использовать в комбинации с тегом &lt;col&gt;, который определяет характеристики одной или нескольких колонок. 
+        Обычно закрывающий тег не требуется, но если &lt;colgroup&gt; выступает как контейнер для элементов &lt;col&gt;, тогда следует добавить тег &lt;/colgroup&gt; в конце группы.
+        Разница между свойствами тегов &lt;colgroup&gt; и &lt;col&gt; не очень велика и состоит в следующем. &lt;colgroup&gt; позволяет объединять колонки в определенные группы, также при добавлении атрибута rules="groups" к тегу &lt;table&gt; браузер будет рисовать линию только между колонками, созданными с помощью &lt;colgroup&gt;. В остальных случаях поведение колонок назначенных через элементы &lt;colgroup&gt; и &lt;col&gt; идентично.
     </p>
     <h3>Атрибуты</h3>
     <table>
         <tr>
             <td width=100px>align</td>
-            <td width=400px>&lt;col align="left | center | right | justify"&gt;</td>
+            <td width=400px>&lt;colgroup align="left | center | right | justify"&gt;</td>
             <td width=400px>
-                <table border="1" width="400">
-                    <col align="right">
-                    <col span="3" width="50" align="center">
+                <table border="1">
+                    <colgroup align="left">
+                    <colgroup span="3" width="50" align="center">
                     <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                    </tr>
+                     <td>1</td>
+                     <td>2</td>
+                     <td>3</td>
+                     <td>4</td>
+                   </tr>
                 </table>
             </td>
-            <td width=1000px>Задает выравнивание содержимого колонок по горизонтали. Этот атрибут действует на все ячейки в колонке, в том числе и на заголовки таблицы, которые определяются тегом &lt;th&gt;. Чтобы управлять выравниванием содержимого разных элементов воспользуйтесь стилями или устанавливайте атрибут align для отдельных ячеек таблицы. <br>
+            <td width=1000px>Задает выравнивание содержимого колонок по горизонтали. Этот атрибут действует на все ячейки в колонке, в том числе и на заголовки таблицы, которые определяются тегом &lt;th&gt;. Чтобы управлять выравниванием содержимого разных элементов воспользуйтесь стилями или устанавливайте атрибут align для отдельных ячеек таблицы.<br>
                 <b>left</b> - Выравнивание контента по левому краю. <br>
                 <b>center</b> - Выравнивание по центру.<br>
                 <b>right</b> - Выравнивание по правому краю.<br>
@@ -48,7 +50,7 @@
             <td>char</td>
             <td>
                 &lt;table&gt;<br>
-                    &lt;col char="символ"&gt;<br>
+                    &lt;colgroup char="символ"&gt;<br>
                     &lt;tr&gt;<br>
                         &lt;td>...&lt;/td&gt;<br>
                     &lt;/tr&gt;<br>
@@ -56,8 +58,8 @@
             </td>
             <td>
                 <table width="450" cellpadding="2" cellspacing="0" border="1">
-                    <col align="left">
-                    <col span="3" align="char" char=",">
+                    <colgroup align="left">
+                    <colgroup span="3" align="char" char=",">
                     <tr> 
                      <td>&nbsp;</td><td>Нефть</td><td>Золото</td><td>Дерево</td><td>Газ</td>
                     </tr>
@@ -81,7 +83,7 @@
             <td>charoff</td>
             <td>
                 &lt;table&gt;<br>
-                    &lt;col charoff="значение"&gt;<br>
+                    &lt;colgroup charoff="значение"&gt;<br>
                     &lt;tr&gt;<br>
                         &lt;td>...&lt;/td&gt;<br>
                     &lt;/tr&gt;<br>
@@ -89,8 +91,8 @@
             </td>
             <td>
                 <table width="450" cellpadding="2" cellspacing="0" border="1">
-                    <col align="left">
-                    <col span="3" align="char" char="," charoff="-2">
+                    <colgroup align="left">
+                    <colgroup span="3" align="char" char="," charoff="2">
                     <tr> 
                      <td>&nbsp;</td><td>Нефть</td><td>Золото</td><td>Дерево</td><td>Газ</td>
                     </tr>
@@ -112,12 +114,12 @@
         </tr>
         <tr>
             <td>span</td>
-            <td>&lt;col span="число"&gt;</td>
+            <td>&lt;colgroup span="число"&gt;</td>
             <td>
                 <table width="700" cellspacing="0" border="1">
-                    <col width="150">
-                    <col span="5" width="50" align="center">
-                    <col span="4" width="75" align="center">
+                    <colgroup width="150">
+                    <colgroup span="5" width="50" align="center">
+                    <colgroup span="4" width="75" align="center">
                     <tr> 
                      <td>&nbsp;</td><td>1995</td><td>1996</td><td>1997</td>
                      <td>1998</td><td>1999</td><td>2000</td><td>2001</td>
@@ -137,20 +139,24 @@
                     </tr>
                 </table>
             </td>
-            <td>Определяет число колонок, к которым будут применяться заданные характеристики. Если этот атрибут отсутствует, то тег &lt;col&gt; работает для одной колонки. Допускается применять атрибут span к нескольким колонкам и таким образом формировать группы колонок с одинаковыми характеристиками.</td>
+            <td>Определяет число колонок, к которым будут применяться заданные характеристики. Если этот атрибут отсутствует, то тег &lt;colgroup&gt; работает для одной колонки. Допускается применять атрибут span к нескольким колонкам и таким образом формировать группы колонок с одинаковыми характеристиками.</td>
         </tr>
         <tr>
             <td>valign</td>
-            <td>&lt;col valign="baseline | bottom | middle | top"&gt;</td>
+            <td>&lt;colgroup valign="baseline | bottom | middle | top"&gt;</td>
             <td>
-                <table width="700" border="1">
-                    <col width="150">
-                    <col valign="top" span="3">
+                <table width="450">
+                    <colgroup width="100" valign="top">
+                    <colgroup>
                     <tr>
-                     <td>1<Br>1<Br>1</td>
-                     <td>2</td>
-                     <td>3</td>
-                     <td>4</td>
+                     <td><h3>Смоква</h3></td>
+                     <td>Спелые чистые ягоды клубники укладывают в кастрюлю, 
+                      пересыпая их сахаром (пять стаканов ягоды, три стакана сахара), 
+                      и оставляют до появления сока, затем ставят на слабый
+                      огонь. Помешивая, доваривают до состояния, когда масса легко 
+                      отделяется от дна кастрюли. Ее выкладывают на плоское блюдо, 
+                      смоченное холодной водой, разравнивают ножом и подсушивают на воздухе.
+                     </td>
                     </tr>
                 </table>
             </td>
@@ -163,11 +169,11 @@
         </tr>
         <tr>
             <td>width</td>
-            <td>&lt;col width="значение"&gt;</td>
+            <td>&lt;colgroup width="значение"&gt;</td>
             <td>
-                <table cellpadding="10" border="1" width="100%">
-                    <col width="20%">
-                    <col width="80%">
+                <table width="600" cellpadding="2" cellspacing="0" border="1" rules="groups">
+                    <colgroup width="2*">
+                    <colgroup span="2" align="center" width="1*">
                     <tr>
                      <td> ... </td>
                      <td> ... </td>
