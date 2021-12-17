@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тег  &lt;base&gt;</title>
-    <base href="http://htmlbook.ru/example/images/">
-    <base target="_blank">
     <style>
         body {
             background-repeat: no-repeat;
@@ -14,6 +12,8 @@
             background-image: url(/HTMLProject/Images/43471.jpg);
         }
     </style>
+    <base href="http://htmlbook.ru/example/images/">
+    <base target="_blank">
 </head>
 <body>
     <h1>Тег &lt;base&gt;</h1>
@@ -49,10 +49,12 @@
                 <p><a href="universal attributes.html" target="_self">Ссылка откроется в текущем окне</a></p>
             </td>
             <td> Вы можете определить окно, в которое будет загружаться веб-страница, открытая по ссылке. Для этого используется атрибут target, в качестве его значения указывается имя окна или фрейма. Если target не установлен, возвращаемый результат показывается в текущем окне. <br>
-                _blank - загружает страницу в новое окно браузера. <br>
-                _self - Загружает страницу в текущее окно. (по умолчанию) <br>
-                _parent - Загружает страницу во фрейм-родитель, если фреймов нет, то это значение работает как _self. <br>
-                _top - Отменяет все фреймы и загружает страницу в полном окне браузера, если фреймов нет, то это значение работает как _self.
+                <dl>
+                    <dt>_blank</dt> <dd>Загружает страницу в новое окно браузера.</dd>
+                    <dt>_self</dt> <dd>Загружает страницу в текущее окно. (по умолчанию)</dd> 
+                    <dt>_parent</dt> <dd>Загружает страницу во фрейм-родитель, если фреймов нет, то это значение работает как _self.</dd>
+                    <dt>_top</dt> <dd>Отменяет все фреймы и загружает страницу в полном окне браузера, если фреймов нет, то это значение работает как _self.</dd>
+                  </dl>
             </td> 
         </tr>
     </table>

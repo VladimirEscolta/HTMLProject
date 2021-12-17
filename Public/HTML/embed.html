@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;embed&gt;</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;embed&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Элемент &lt;embed&gt; используется для загрузки и отображения объектов (например, видеофайлов, флэш-роликов, некоторых звуковых файлов и т.д.), которые исходно браузер не понимает. Как правило, такие объекты требуют подключения к браузеру специального модуля, который называется плагин, или запуска вспомогательной программы. Спецификация HTML 4.0 рекомендует использовать тег <object> для загрузки внешних данных вместо тега &lt;embed&gt;. Однако некоторые браузеры не отображают таким образом нужную информацию, поэтому наилучшим вариантом будет поместить &lt;embed&gt; внутрь контейнера <object>. Вид внедренного объекта зависит от установленных в браузере плагинов, типа загружаемого файла, а также от атрибутов тега &lt;embed&gt;. На рис. 1 и рис. 2 показан вид воспроизведения в браузере различных типов файлов.
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;embed align="absmiddle | baseline | bottom | left | middle | right | texttop | top"&gt;...&lt;/embed&gt;        
+            </td>
+            <td>
+                <embed src="images/mouse.swf" width="400" height="200" align="left"></embed>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh 
+                euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. 
+            </td>
+            <td>
+                Определяет выравнивание объекта на странице и способ его отображения совместно с другими нижележащими элементами вроде текста. <br>
+               <dl>
+                    <dt>absmiddle</dt>
+                        <dd>Выравнивание середины объекта по середине текущей строки.</dd>
+                    <dt>baseline</dt>
+                        <dd>Выравнивание объекта по базовой линии текущей строки.</dd>
+                    <dt>bottom</dt>
+                        <dd>Выравнивание нижней границы объекта по окружающему тексту.</dd>
+                    <dt>left</dt>
+                        <dd>Выравнивает объект по левому краю окна, текст обтекает его справа.</dd>
+                    <dt>middle</dt>
+                        <dd>Выравнивание середины объекта по базовой линии текущей строки.</dd>
+                    <dt>right</dt>
+                        <dd>Выравнивает объект по правому краю окна, текст обтекает слева.</dd>
+                    <dt>texttop</dt>
+                        <dd>Верхняя граница объекта выравнивается по самому высокому текстовому элементу текущей строки.</dd>
+                    <dt>top</dt>
+                        <dd>Верхняя граница объекта выравнивается по самому высокому элементу текущей строки.</dd>
+               </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>height</td>
+            <td>
+                &lt;embed height="высота"&gt;...&lt;/embed&gt;        
+            </td>
+            <td>
+                <embed src="images/mouse.swf" width="300" height="150" align="left"></embed>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh 
+                euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. 
+            </td>
+            <td>
+                Атрибут height устанавливает высоту объекта. В заданные размеры входит не только само изображение, например в случае воспроизведения видеофайла, но и панель управления им, включая кнопки проигрывания, паузы, остановки и т.д. По этой причине на размер отображаемого объекта влияет тип файла и применяемый плагин. Если используется процентная запись, то размеры объекта вычисляются относительно родительского элемента — контейнера, где находится тег &lt;embed&gt;. В случае отсутствия родительского контейнера, в его качестве выступает окно браузера. Иными словами, height="100%" означает, что объект будет занимать всю доступную высоту веб-страницы.
+            </td>
+        </tr>
+        <tr>
+            <td>hidden</td>
+            <td>
+                &lt;embed hidden="true | false"&gt;...&lt;/embed&gt;        
+            </td>
+            <td>
+                <embed src="town.mid" hidden="true"></embed>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh 
+                euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.
+            </td>
+            <td>
+                Атрибут hidden представляет собой выключатель, который определяет, отображать объект в окне браузера или нет. Это особенно удобно для скрытия панели управления при воспроизведении фоновой музыки. Если этот атрибут указан, значение атрибутов width и height игнорируется. <br>
+                <dl>
+                    <dt>true</dt>
+                    <dd>Скрывает объект.</dd>
+                    <dt>false</dt>
+                    <dd>Отображает объект на странице.</dd>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>hspace</td>
+            <td>
+                &lt;embed hspace="отступ по горизонтали"&gt;...&lt;/embed&gt;        
+            </td>
+            <td>
+                <embed src="images/mouse.swf" width="200" height="100" 
+                type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"
+                hspace="10" vspace="10"></embed>
+            </td>
+            <td>
+                Для любого объекта можно задать невидимые отступы по горизонтали и вертикали с помощью атрибутов hspace и vspace. Особенно это актуально при обтекании объекта текстом, в этом случае необходимо вокруг него добавить пустое пространство.
+            </td>
+        </tr>
+        <tr>
+            <td>pluginspage</td>
+            <td>
+                &lt;embed pluginspage="URL"&gt;...&lt;/embed&gt;        
+            </td>
+            <td>
+                <embed src="images/mouse.swf" width="200" height="100" 
+                type="application/x-shockwave-flash" 
+                pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+            </td>
+            <td>
+                Если браузер не поддерживает указанный тип файлов заданный атрибутом src, то pluginspage используется для того, чтобы перейти по указанному адресу, откуда можно скачать и установить необходимый плагин. Браузер сообщает пользователю, что требуемого плагина для отображения файла нет, и запрашивает, загружать его или нет.
+            </td>
+        </tr>
+        <tr>
+            <td>src</td>
+            <td>
+                &lt;embed src="URL"&gt;...&lt;/embed&gt;        
+            </td>
+            <td>
+                <embed src="images/mouse.swf" width="200" height="100" 
+                type="application/x-shockwave-flash" 
+                pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+            </td>
+            <td>
+                Атрибут src указывает путь к файлу, который необходимо загрузить в окно браузера. Браузер анализирует расширение файла и решает по нему, какой плагин или внешняя программа требуется для отображения файла.
+            </td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>
+                &lt;embed type="MIME-тип"&gt;...&lt;/embed&gt;        
+            </td>
+            <td>
+                <embed src="images/mouse.swf" width="200" height="100" 
+                type="application/x-shockwave-flash" 
+                pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+            </td>
+            <td>
+                Не всегда браузер может распознать тип файла по его расширению. В таких случаях лучше указывать его тип с помощью атрибута type, который устанавливает MIME-тип для данных.
+            </td>
+        </tr>
+        <tr>
+            <td>vspace</td>
+            <td>
+                &lt;embed vspace="отступ по вертикали"&gt;...&lt;/embed&gt;        
+            </td>
+            <td>
+                <embed src="images/mouse.swf" width="200" height="100" 
+                type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"
+                hspace="10" vspace="10"></embed>
+            </td>
+            <td>
+                Для любого объекта можно задать невидимые отступы по горизонтали и вертикали с помощью атрибутов hspace и vspace. Особенно это актуально при обтекании объекта текстом, в этом случае необходимо вокруг него добавить пустое пространство.
+            </td>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td>
+                &lt;embed width="ширина"&gt;...&lt;/embed&gt;        
+            </td>
+            <td>
+                <embed src="images/mouse.swf" width="200" height="100" 
+                type="application/x-shockwave-flash" 
+                pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+            </td>
+            <td>
+                Атрибут width устанавливает ширину объекта. В заданные размеры входит не только само изображение, например в случае воспроизведения видеофайла, но и панель управления им, включая кнопки проигрывания, паузы, остановки и т.д. По этой причине на размер отображаемого объекта влияет тип файла и применяемый плагин.
+
+                Если используется процентная запись, то размеры объекта вычисляются относительно родительского элемента — контейнера, где находится тег &lt;embed&gt;. В случае отсутствия родительского контейнера, в его качестве выступает окно браузера. Иными словами, width="100%" означает, что объект будет занимать всю доступную ширину веб-страницы.
+            </td>
+        </tr>
+    </table>
+    
+    <h3><a href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></h3>
+</body>
+</html>
