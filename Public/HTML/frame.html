@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;frame&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;frame&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Тег &lt;frame&gt; определяет свойства отдельного фрейма, на которые делится окно браузера. Этот элемент должен располагаться в контейнере &lt;frameset&gt;, который к тому же задает способ разметки страницы на отдельные области. В каждую из таких областей загружается самостоятельная веб-страница определяемая с помощью атрибута src. Хотя обязательных атрибутов у тега &lt;frame&gt; и нет, рекомендуется задавать каждому фрейму его имя через атрибут name. Это особенно важно, если требуется по ссылке из одного фрейма загружать документ в другой.
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>bordercolor</td>
+            <td>
+                &lt;frame bordercolor="цвет"&gt;
+            </td>
+            <td>
+                <frameset rows="*" cols="80,*" bordercolor="black" border="5">
+                    <frame src="universal_attributes.html" name="leftFrame">
+                    <frameset rows="80,*" bordercolor="blue" border="5">
+                      <frame src="developments.html" name="topFrame" bordercolor="red">
+                      <frame src="../../Index.html" name="mainFrame">
+                    </frameset>
+                </frameset>
+            </td>
+            <td>
+                Если у тега &lt;frameset&gt; установлено отображение границ, то для индивидуальных фреймов их цвет можно изменить через атрибут bordercolor тега &lt;frame&gt;. Браузеры, как правило, по-разному отображают цветную границу, например, Opera вообще игнорирует данный атрибут. Если для тегов &lt;frameset&gt; и &lt;frame&gt; рамка устанавливается разного цвета, то обычно приоритет имеет последний.
+            </td>
+        </tr>
+        <tr>
+            <td>frameborder</td>
+            <td>
+                &lt;frame frameborder="1 | 0"&gt;
+            </td>
+            <td>
+                <frameset cols="100,*,20%">
+                    <frame src="universal_attributes.html" name="leftFrame" frameborder="0">
+                    <frame src="developments.html" name="mainFrame" frameborder="0">
+                    <frame src="../../Index.html" name="rightFrame" frameborder="0">
+                </frameset>
+            </td>
+            <td>
+                Определяет, отображать границу между фреймами или нет. Браузер Opera в любом случае показывает тонкую линию, если у тега &lt;frameset&gt; не задан атрибут framespacing="0". Этот атрибут отменяет действие frameborder у тега &lt;frameset&gt;.
+            </td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>
+                &lt;frame name="имя"&gt;
+            </td>
+            <td>
+                <frameset cols="100,*,20%">
+                    <frame src="universal_attributes.html" name="leftFrame">
+                    <frame src="developments.html" name="mainFrame">
+                    <frame src="../../Index.html" name="rightFrame">
+                </frameset>
+            </td>
+            <td>
+                В обычном HTML-документе при переходе по ссылке, в окне браузера текущий документ заменяется новым. При использовании фреймов схема загрузки документов отличается от стандартной. Основное отличие — возможность загружать документ в выбранный фрейм из другого. Для этой цели используется атрибут target тега &lt;a&gt;. В качестве значения указывается имя фрейма, в который будет загружаться документ, заданный атрибутом name.
+            </td>
+        </tr>
+        <tr>
+            <td>noresize</td>
+            <td>
+                &lt;frame noresize&gt;
+            </td>
+            <td>
+                <frameset cols="100,*">
+                    <frame src="universal_attributes.html" name="leftFrame" noresize>
+                    <frame src="developments.html" name="mainFrame">
+                </frameset>
+            </td>
+            <td>
+                Пользователь может изменить размер фрейма с помощью курсора мыши, активировав его на границе и перетаскивая в нужную сторону. Причем не имеет значения, видна граница или нет. Добавление атрибута noresize запрещает эту возможность, и пользователь уже не может изменить размеры фреймов самостоятельно.
+            </td>
+        </tr>
+        <tr>
+            <td>scrolling</td>
+            <td>
+                &lt;frame scrolling="auto | no | yes"&gt;
+            </td>
+            <td>
+                <frameset cols="100,*">
+                    <frame src="universal_attributes.html" name="leftFrame" noresize scrolling="no">
+                    <frame src="developments.html" name="mainFrame">
+                </frameset>
+            </td>
+            <td>
+                Если содержимое фрейма не помещается в отведенное окно, автоматически появляются полосы прокрутки для просмотра информации. В некоторых случаях, полосы прокрутки нарушают дизайн веб-страницы, поэтому от них можно отказаться. Для управления отображением полос прокрутки используется атрибут scrolling. <br>
+                <dl>
+                    <dt>auto</dt> <dd>Полосы прокрутки добавляются браузером только по необходимости, в том случае, когда содержимое фрейма превышает его видимую часть.</dd>
+                    <dt>no</dt> <dd>Запрещает отображение полос прокрутки.</dd>
+                    <dt>yes</dt> <dd>Всегда вызывает появление полос прокрутки, независимо от объема информации.</dd>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>src</td>
+            <td>
+                &lt;frame src="URL"&gt;
+            </td>
+            <td>
+                <frameset cols="100,*">
+                    <frame src="universal_attributes.html" name="leftFrame">
+                    <frame src="developments.html" name="mainFrame">
+                </frameset>
+            </td>
+            <td>Указывает адрес файла (URL), который будет загружаться во фрейм. Допустимо использовать не только путь к файлу, но также имя функции JavaScript, которое возвращает значение.</td>
+        </tr>
+    </table>
+   
+    <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
+</body>
+</html>

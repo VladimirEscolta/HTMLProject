@@ -3,3 +3,12 @@ body {
     background-size: cover;
     background-image: url(../../Images/43471.jpg);
 }
+
+p {
+    text-indent: 30px; 
+    text-align: justify;
+}
+
+li{
+    text-align: justify;
+}
