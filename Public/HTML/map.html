@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;map&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;map&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Тег &lt;map&gt; служит контейнером для элементов &lt;area&gt;, которые определяют активные области для карт-изображений. Такие области устанавливают невидимые зоны на изображении, являющиеся ссылками на HTML-документы. Цель использования тега &lt;map&gt; — в связывании тега &lt;img&gt; с клиентской картой-изображением. Эта связь определяется применением единого идентификатора как в теге &lt;img&gt;, задаваемого атрибутом usemap, так и в теге &lt;map&gt;, устанавливаемого атрибутом name.
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>name</td>
+            <td>
+                &lt;map&gt;...&lt;/map&gt;
+            </td>
+            <td>
+                <div id="title"><img src="../../Images/travolta.gif" width="640" height="158" 
+                    alt="Траволта"><br>
+                   <img src="images/navigate.png" width="640" height="30" alt="Навигация по сайту"
+                    usemap="#Navigation">
+                </div>
+                   <p><map id="Navigation" name="Navigation">
+                    <area shape="poly" coords="113,24,211,24,233,0,137,0" href="universal_attributes.html" alt="Информация">
+                    <area shape="poly" coords="210,24,233,0,329,0,307,24" href="developments.html" alt="Мероприятия">
+                    <area shape="poly" coords="304,24,385,24,407,0,329,0" href="developments.html" alt="Отделения">
+                    <area shape="poly" coords="384,24,449,24,473,0,406,0" href="universal_attributes.html" alt="Техническая информация">
+                    <area shape="poly" coords="449,24,501,24,525,0,473,0" href="universal_attributes.html" alt="Обучение">
+                    <area shape="poly" coords="501,24,560,24,583,0,525,0" href="developments.html" alt="Работа">
+                    <area shape="poly" coords="560,24,615,24,639,0,585,0" href="universal_attributes.html" alt="Разное">
+                   </map></p>
+            </td>
+            <td>
+                <p>Имя идентификатора, которое однозначно определяет карту-изображение. Значение атрибута name тега &lt;map&gt; должно соответствовать имени в usemap. При этом значение атрибута usemap тега &lt;img&gt; начинается с символа решетки.</p>
+            </td>
+        </tr>
+    </table>
+
+    <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
+</body>
+</html>
