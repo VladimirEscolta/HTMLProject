@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тег &lt;map&gt;</title>
+    <title>Тег &lt;mark&gt;</title>
     <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
     <link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon">
     <style>
@@ -16,21 +16,29 @@
     </style>
 </head>
 <body>
-    <h1>Тег &lt;map&gt;</h1>
+    <h1>Тег &lt;mark&gt;</h1>
     <h3>Описание</h3>
     <p>
-        Тег &lt;map&gt; служит контейнером для элементов &lt;area&gt;, которые определяют активные области для карт-изображений. Такие области устанавливают невидимые зоны на изображении, являющиеся ссылками на HTML-документы. Цель использования тега &lt;map&gt; — в связывании тега &lt;img&gt; с клиентской картой-изображением. Эта связь определяется применением единого идентификатора как в теге &lt;img&gt;, задаваемого атрибутом usemap, так и в теге &lt;map&gt;, устанавливаемого атрибутом name.
+        Тег &lt;mark&gt; помечает текст как выделенный. Такой текст ничем не отличается от обычного, но его вид может быть изменен с помощью стилей. В браузере Chrome и Firefox фоновый цвет текста внутри &lt;mark&gt; выделяется желтым цветом.
     </p>
     <h3>Атрибуты</h3>
-
-    <div id="title">
-       <img src="../../Images/git.jpg" width="840" alt="Рисунок Git"
-        usemap="#Navigation">
-    </div>
-       <p><map id="Navigation" name="Navigation">
-        <area shape="rect" coords="250,150,530,370" href="universal_attributes.html" alt="Универсальные атрибуты" style="border: 2px; black;">
-        <area shape="rect" coords="50,500,770,710" href="developments.html" alt="События">
-       </map></p>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>name</td>
+            <td>
+                &lt;mark&gt;Текст&lt;/mark&gt;
+            </td>
+            <td>
+                <mark>Выделенный текст</mark>
+            </td>
+            <td>
+                ...
+            </td>
+        </tr>
+    </table>
 
     <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
 </body>
