@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тег &lt;listing&gt;</title>
+    <title>Тег &lt;main&gt;</title>
     <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
     <link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon">
     <style>
@@ -16,10 +16,10 @@
     </style>
 </head>
 <body>
-    <h1>Тег &lt;listing&gt;</h1>
+    <h1>Тег &lt;main&gt;</h1>
     <h3>Описание</h3>
     <p>
-        Предназначен для вывода листинга программ или кода. Отображает содержимое моноширинным шрифтом уменьшенного размера.
+        
     </p>
     <h3>Атрибуты</h3>
     <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
@@ -29,38 +29,25 @@
         <tr>
             <td>...</td>
             <td>
-                &lt;listing&gt;Текст&lt;/listing&gt;
+                &lt;main&gt; <br>
+                &lt;/main&gt;
             </td>
             <td>
-                <p>Пример программы</p>
-                <listing>
-                while (<>) {
-                    $org=$_;
-                    s/\\["']//g;
-                    s/\/\/[^:].*//;
-                    s/\/\*.*\*\///g;
-                    if ($comment == 1) {
-                    if (s/.*\*\///) {
-                        $comment = 0;
-                    }
-                    else {
-                        next;
-                    }
-                    }
-                    if (s/\/\*.*//) {
-                    $comment = 1;
-                    }
-                    if (/^\s*#/) {
-                    next;
-                    }
-                }</listing>
+                <h1>Следы невиданных зверей</h1>
+                <main>
+                  История о том, как возле столовой появились загадочные розовые 
+                  следы с шестью пальцами, и почему это случилось. 
+                </main>
             </td>
             <td>
-                ...
+                <p>Элемент &lt;main&gt; предназначен для основного содержимого документа. Содержимое должно быть уникальным и не включать типовые блоки вроде шапки сайта, подвала, навигации, боковой панели, формы поиска и т. п.</p>
             </td>
         </tr>
     </table>
 
+    <h5> 
+        <p> Также для тега доступны только<a href="universal_attributes.html">Универсальные атрибуты</a></p> <br> 
+    </h5>
     <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
 </body>
 </html>
