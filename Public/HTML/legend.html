@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;legend&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;legend&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Тег &lt;legend&gt; применяется для создания заголовка группы элементов формы, которая определяется с помощью тега &lt;fieldset&gt;. Группа элементов обозначается в браузере с помощью рамки, а текст, который располагается внутри контейнера &lt;legend&gt;, встраивается в эту рамку.
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>accesskey</td>
+            <td>
+                &lt;legend accesskey="c"&gt;Текст&lt;/legend&gt;
+            </td>
+            <td>
+                <p>Для перехода к блоку используется клавиша <button>x</button>.</p> 
+                <fieldset>
+                  <legend accesskey="x">Работа со временем</legend>
+                  <input type="checkbox"> создание пунктуальности (никогда не 
+                  будете никуда опаздывать);<Br>
+                  <input type="checkbox"> излечение от пунктуальности (никогда 
+                  никуда не будете торопиться);<Br>
+                  <input type="checkbox"> изменение восприятия времени и часов.
+                </fieldset>
+            </td>
+            <td>
+                <p>Атрибут accesskey позволяет перейти к группе элементов формы с помощью некоторого сочетания клавиш с заданной в атрибуте буквой или цифрой. Браузеры при этом используют различные комбинации клавиш. Например, для accesskey="s" работают следующие сочетания:</p>
+                <ul>
+                    <li style="margin-bottom: 2px;">Internet Explorer: <button>Alt</button> + <button>S</button></li>
+                    <li style="margin-bottom: 2px;">Chrome: <button>Alt</button> + <button>S</button></li>
+                    <li style="margin-bottom: 2px;">Opera: <button>Shift</button> + <button>Esc</button>+ <button>S</button></li>
+                    <li style="margin-bottom: 2px;">Safari: <button>Alt</button> + <button>S</button></li>
+                    <li>Firefox: <button>Shift</button> + <button>Alt</button> + <button>S</button></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;legend align="left | center | right"&gt;...&lt;/legend&gt;
+            </td>
+            <td>
+                <p>Выравнивание заголовка по правому краю.</p> 
+                <fieldset>
+                  <legend align="right">Работа со временем</legend>
+                  <input type="checkbox"> создание пунктуальности (никогда не 
+                  будете никуда опаздывать);<Br>
+                  <input type="checkbox"> излечение от пунктуальности (никогда 
+                  никуда не будете торопиться);<Br>
+                  <input type="checkbox"> изменение восприятия времени и часов.
+                </fieldset>
+            </td>
+            <td>
+                <p>Выравнивание текста заголовка по краю.</p>
+                <dl>
+                    <dt>left</dt> <dd>Выравнивание текста по левому краю.</dd>
+                    <dt>center</dt> <dd>Выравнивание по центру.</dd>
+                    <dt>right</dt> <dd>Выравнивание по правому краю.</dd>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>title</td>
+            <td>
+                &lt;legend title="текст"&gt;...&lt;/legend&gt;
+            </td>
+            <td>
+                <p>Наведите курсор на заголовок.</p> 
+                <fieldset>
+                  <legend title="Поясняющий текст">Работа со временем</legend>
+                  <input type="checkbox"> создание пунктуальности (никогда не 
+                  будете никуда опаздывать);<Br>
+                  <input type="checkbox"> излечение от пунктуальности (никогда 
+                  никуда не будете торопиться);<Br>
+                  <input type="checkbox"> изменение восприятия времени и часов.
+                </fieldset>
+            </td>
+            <td>
+                <p>Добавляет поясняющий текст в виде всплывающей подсказки, которая отображается, когда курсор мыши задерживается на заголовке.</p>
+            </td>
+        </tr>
+    </table>
+
+    <h5> 
+        <p> Также для тега доступны <a href="universal_attributes.html">Универсальные атрибуты</a> и <a href="developments.html">События</a></p> <br> 
+    </h5>
+    <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
+</body>
+</html>

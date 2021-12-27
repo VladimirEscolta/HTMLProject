@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;label&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;label&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Тег &lt;label&gt; устанавливает связь между определенной меткой, в качестве которой обычно выступает текст, и элементом формы (&lt;input&gt;, &lt;select&gt;, &lt;textarea&gt;). Такая связь необходима, чтобы изменять значения элементов формы при нажатии курсором мыши на текст. Кроме того, с помощью &lt;label&gt; можно устанавливать горячие клавиши на клавиатуре и переходить на активный элемент подобно ссылкам.
+        <p>Существует два способа связывания объекта и метки. Первый заключается в использовании идентификатора id внутри элемента формы и указании его имени в качестве атрибута for тега &lt;label&gt;. При втором способе элемент формы помещается внутрь контейнера &lt;label&gt;.</p>
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>accesskey</td>
+            <td>
+                &lt;label accesskey="клавиша"&gt;...&lt;/label&gt;
+            </td>
+            <td>
+                <form action="handler.php">
+                    <p><input type=checkbox id="t1"><label for="t1" 
+                     accesskey="g">Нажмите <button>Alt</button> + <button>g</button>, чтобы перейти к
+                      разделу <b>Игры</b>.</label></p>
+                </form>
+            </td>
+            <td>
+                <p>Определяет горячую клавишу, с помощью которой происходит переход фокуса к элементу формы. Браузеры при этом используют различные комбинации клавиш. Например, для accesskey="s" работают следующие сочетания:</p>
+                <ul>
+                    <li style="margin-bottom: 2px;">Internet Explorer: <button>Alt</button> + <button>S</button></li>
+                    <li style="margin-bottom: 2px;">Chrome: <button>Alt</button> + <button>S</button></li>
+                    <li style="margin-bottom: 2px;">Opera: <button>Shift</button> + <button>Esc</button>+ <button>S</button></li>
+                    <li style="margin-bottom: 2px;">Safari: <button>Alt</button> + <button>S</button></li>
+                    <li>Firefox: <button>Shift</button> + <button>Alt</button> + <button>S</button></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>for</td>
+            <td>
+                &lt;label for="идентификатор"&gt;...&lt;/label&gt;
+            </td>
+            <td>
+                <form action="handler.php">
+                    <p><input type=checkbox id="t1"><label for="t1" 
+                     accesskey="g">Нажмите <button>Alt</button> + <button>g</button>, чтобы перейти к
+                      разделу <b>Игры</b>.</label></p>
+                </form>
+            </td>
+            <td>
+                <p>Задает уникальный идентификатор, определяемый с помощью атрибута id элемента &lt;input&gt;, с которым следует установить связь. Атрибут for необходимо задавать в том случае, когда элемент формы и текст разделены. Если &lt;input&gt; размещается внутри контейнера &lt;label&gt;, то применять атрибут for не требуется.</p>
+            </td>
+        </tr>
+    </table>
+   
+    <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
+</body>
+</html>
