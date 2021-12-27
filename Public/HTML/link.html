@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;link&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;link&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Устанавливает связь с внешним документом вроде файла со стилями или со шрифтами. В отличие от тега &lt;a&gt;, тег &lt;link&gt; размещается всегда внутри контейнера &lt;head&gt; и не создает ссылку.
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>charset</td>
+            <td>
+                &lt;link charset="кодировка"&gt;
+            </td>
+            <td>
+                <p>Пример:</p>
+                &lt;head&gt; <br>
+                &nbsp;&nbsp;&lt;link href="okinawa.html" rel="parent" charset="euc-jp"&gt; <br>
+                &lt;/head&gt;
+            </td>
+            <td>
+                <p>Указывает кодировку документа на который ссылается тег &lt;link&gt;.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>href</td>
+            <td>
+                &lt;link href="URL"&gt;
+            </td>
+            <td>
+                <p>Пример:</p>
+                &lt;head&gt; <br>
+                &nbsp;&nbsp;&lt;link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon&gt; <br>
+                &lt;/head&gt;
+            </td>
+            <td>
+                <p>Путь к файлу, на который делается ссылка (URL).</p>
+            </td>
+        </tr>
+        <tr>
+            <td>media</td>
+            <td>
+                &lt;link media="all|braille|handheld|print|screen <br>|speech|projection|tty|tv"&gt;
+            </td>
+            <td>
+                <p>Пример:</p>
+                &lt;head&gt; <br>
+                &nbsp;&nbsp;&lt;link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon&gt; media="all" <br>
+                &lt;/head&gt;
+            </td>
+            <td>
+                <p>Определяет устройство, для которого следует применять стилевое оформление. Это позволяет сделать разный стиль для отображения документа на экране монитора и при его печати. Допускается писать несколько значений через запятую.</p>
+                <dl>
+                    <dt>all</dt> <dd>Все устройства.</dd>
+                    <dt>braille</dt> <dd>Устройства, основанные на системе Брайля, предназначены для слепых людей.</dd>
+                    <dt>handheld</dt> <dd>Наладонники, смартфоны, устройства с малой шириной экрана.</dd>
+                    <dt>print</dt> <dd>Печатающее устройство вроде принтера.</dd>
+                    <dt>screen</dt> <dd>Экран монитора.</dd>
+                    <dt>speech</dt> <dd>Речевые синтезаторы, а также программы для воспроизведения текста вслух. Сюда же входят речевые браузеры.</dd>
+                    <dt>projection</dt> <dd>Проектор.</dd>
+                    <dt>tty</dt> <dd>Телетайпы, терминалы, портативные устройства с ограниченными возможностями экрана. Для них не должны использоваться пикселы в качестве единиц измерения.</dd>
+                    <dt>tv</dt> <dd>Телевизор.</dd>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>rel</td>
+            <td>
+                &lt;link rel="тип"&gt;
+            </td>
+            <td>
+                <p>Пример:</p>
+                &lt;head&gt; <br>
+                &nbsp;&nbsp;&lt;link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon&gt; <br>
+                &lt;/head&gt;
+            </td>
+            <td>
+                <p>Атрибут rel определяет отношения между текущим документом и файлом, на который делается ссылка. Это необходимо, чтобы браузер знал, как использовать подключаемый документ.</p>
+                <dl>
+                    <dt>stylesheet</dt> <dd>Определяет, что подключаемый файл хранит таблицу стилей (CSS).</dd>
+                    <dt>alternate</dt> <dd>Альтернативный тип, используется, к примеру, для указания ссылки на файл в формате XML для описания ленты новостей, анонсов статей.</dd>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>sizes</td>
+            <td>
+                &lt;link rel="icon" sizes="<ширина>X<высота>"&gt;
+                &lt;link rel="icon" sizes="<ширина1>X<высота1> <ширина2>X<высота2>* | any"&gt;
+            </td>
+            <td>
+                <p>Пример:</p>
+                &lt;head&gt; <br>
+                &nbsp;&nbsp;&lt;link rel="icon" href="images/android.ico" sizes="48x48" type="image/x-icon"&gt; <br>
+                &lt;/head&gt;
+            </td>
+            <td>
+                <p>Указывает размер иконок для визуального отображения. Сама иконка может применяться браузером для отображения в адресной строке, при сохранении в избранное, а также поисковыми системами для придания наглядности результатам поиска (именно так поступает Яндекс).</p>
+            </td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>
+                &lt;link type="MIME-тип"&gt;
+            </td>
+            <td>
+                <p>Пример:</p>
+                &lt;head&gt; <br>
+                &nbsp;&nbsp;&lt;link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css"&gt; <br>
+                &lt;/head&gt;
+            </td>
+            <td>
+                <p>Сообщает браузеру, какой MIME-тип данных используется для внешнего документа. Как правило, применяется для того, чтобы указать, что подключаемый файл содержит CSS.</p>
+            </td>
+        </tr>
+    </table>
+
+    <h5> 
+        <p> Также для тега доступны <a href="universal_attributes.html">Универсальные атрибуты</a></p> <br> 
+    </h5>
+    <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
+</body>
+</html>
