@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;li&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;li&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Тег &lt;li&gt; определяет отдельный элемент списка. Внешний тег &lt;ul&gt; или &lt;ol&gt; устанавливает тип списка — маркированный или нумерованный.
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>type</td>
+            <td>
+                &lt;li type="disc | circle | square"&gt;...&lt;/li&gt; <br>
+                &lt;li type="A | a | I | i | 1"&gt;...&lt;/li&gt;
+            </td>
+            <td>
+                <ol>
+                    <li type="disc">Привет</li>
+                    <li type="circle">Пока</li>
+                    <li type="square">Ок</li>
+                </ol>
+                <ul>
+                    <li type="A">Первый</li>
+                    <li type="1">Второй</li>
+                    <li type="a">Третий</li>
+                </ul>
+            </td>
+            <td>
+                <p>Устанавливает вид маркера. Тип маркера и его значение зависит от внешнего контейнера &lt;ul&gt; или &lt;ol&gt;.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>value</td>
+            <td>
+                &lt;li value="число"&gt;...&lt;/li&gt;
+            </td>
+            <td>
+                <ol>
+                    <li type="1" value="8">Молоко</li>
+                    <li type="1">Сметана</li>
+                    <li type="1">Йогурт</li>
+                </ol>
+            </td>
+            <td>
+                <p>Атрибут value устанавливает номер, с которого будет начинаться список. value применяется только для нумерованных списков, когда тег &lt;li&gt; находится внутри контейнера &lt;ol&gt;. При этом не имеет значения, какой тип списка установлен с помощью type, атрибут value одинаково работает и с римскими и с арабскими числами.</p>
+            </td>
+        </tr>
+    </table>
+
+    <h5> 
+        <p> Также для тега доступны <a href="universal_attributes.html">Универсальные атрибуты</a> и <a href="developments.html">События</a></p> <br> 
+    </h5>
+    <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
+</body>
+</html>
