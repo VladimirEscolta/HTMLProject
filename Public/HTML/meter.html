@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;meter&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;meter&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Используется для вывода значения в некотором известном диапазоне. Используется преимущественно для отображения числовых значений, например, количества результатов поиска, объема жидкости, давления и др.
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>value</td>
+            <td>
+                &lt;meter value="значение"&gt;Текст&lt;/meter&gt;
+            </td>
+            <td>
+                <meter value="53" min="1" max="100">Процент зарядки смартфона</meter>
+            </td>
+            <td>
+                <p>Устанавливает значение единицы измерения. Значение должно быть в диапазоне, задаваемым атрибутами min и max.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>min</td>
+            <td>
+                &lt;meter value="значение" min="минимальное значение"&gt;Текст&lt;/meter&gt;
+            </td>
+            <td>
+                <meter value="62" min="1" max="100" low="20">Процент зарядки смартфона</meter>
+            </td>
+            <td>
+                <p>Задает минимальный порог, который может достигать значение.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>max</td>
+            <td>
+                &lt;meter value="значение" max="максимальное значение"&gt;Текст&lt;/meter&gt;
+            </td>
+            <td>
+                <meter value="45" min="1" max="100" low="20">Процент зарядки смартфона</meter>
+            </td>
+            <td>
+                <p>Задает максимальный порог, который может достигать значение.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>low</td>
+            <td>
+                &lt;meter value="значение" low="низкое значение"&gt;Текст&lt;/meter&gt;
+            </td>
+            <td>
+                <meter value="10" min="1" max="100" low="20">Процент зарядки смартфона</meter>
+            </td>
+            <td>
+                <p>Определяет предел, при достижении которого значение считается низким.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>high</td>
+            <td>
+                &lt;meter value="значение" high="высокое значение"&gt;Текст&lt;/meter&gt;
+            </td>
+            <td>
+                <meter value="98" min="1" max="100" high="80">Процент зарядки смартфона</meter>
+            </td>
+            <td>
+                <p>Определяет предел, при достижении которого значение считается высоким.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>optimum</td>
+            <td>
+                &lt;meter value="значение" optimum="оптимальное значение"&gt;Текст&lt;/meter&gt;
+            </td>
+            <td>
+                <meter value="39" optimum="36.6" min="35" max="42"></meter>
+            </td>
+            <td>
+                <p>Определяет наилучшее или оптимальное значение.</p>
+            </td>
+        </tr>
+    </table>
+
+    <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
+</body>
+</html>
