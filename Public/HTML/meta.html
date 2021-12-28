@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;meta&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;meta&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Тег &lt;meta&gt; определяет метатеги, которые используются для хранения информации предназначенной для браузеров и поисковых систем. Например, механизмы поисковых систем обращаются к метатегам для получения описания сайта, ключевых слов и других данных. Разрешается использовать более чем один метатег, все они размещаются в контейнере &lt;head&gt;. Как правило, атрибуты любого метатега сводятся к парам «имя=значение», которые определяются ключевыми словами content, name или http-equiv.
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>charset</td>
+            <td>
+                &lt;meta charset="кодировка"&gt;
+            </td>
+            <td>
+                Пример: <br> <br>
+                &lt;meta charset="utf-8"&gt;
+            </td>
+            <td>
+                <p>Указывает кодировку документа. Атрибут введен в HTML5 и предназначен для сокращения формы тега &lt;meta&gt;, которая задавала кодировку в предыдущих версиях HTML и XHTML.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>content</td>
+            <td>
+                &lt;meta content="..."&gt;
+            </td>
+            <td>
+                Пример: <br> <br>
+                &lt;meta name="keywords" content="HTML, META, метатег, тег, поисковая система"&gt;
+            </td>
+            <td>
+                <p>Атрибут content устанавливает значение атрибута, заданного с помощью name или http-equiv. Атрибут content может содержать более одного значения, в этом случае они разделяются запятыми или точкой с запятой.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>http-equiv</td>
+            <td>
+                &lt;meta http-equiv="..."&gt;
+            </td>
+            <td>
+                Пример: <br> <br>
+                &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt; <br>
+            </td>
+            <td>
+                <p>Браузеры преобразовывают значение атрибута http-equiv, заданное с помощью content, в формат заголовка ответа HTTP и обрабатывают их, как будто они прибыли непосредственно от сервера.</p>
+                <dl>
+                    <dt>Content-Type</dt> <dd>Тип кодировки документа.</dd>
+                    <dt>expires</dt> <dd>Устанавливает дату и время, после которой информация в документе будет считаться устаревшей.</dd>
+                    <dt>pragma</dt> <dd>Способ кэширования документа.</dd>
+                    <dt>refresh</dt> <dd>Загрузить другой документ в текущее окно браузера.</dd>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>
+                &lt;meta name="..."&gt;
+            </td>
+            <td>
+                Пример: <br> <br>
+                &lt;meta name="keywords" content="HTML, META, метатег, тег, поисковая система"&gt;
+            </td>
+            <td>
+                <p>Устанавливает идентификатор метатега для пары «имя=значение». Одновременно использовать атрибуты name и http-equiv не допускается.</p>
+                <dl>
+                    <dt>author</dt> <dd>Имя автора документа.</dd>
+                    <dt>description</dt> <dd>Описание текущего документа.</dd>
+                    <dt>keywords</dt> <dd>Список ключевых слов, встречающихся на странице.</dd>
+                </dl>
+            </td>
+        </tr>
+    </table>
+
+    <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
+</body>
+</html>
