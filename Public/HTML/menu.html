@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;menu&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;menu&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Тег &lt;menu&gt; предназначен для отображения списка пунктов меню. Аналогично тегам &lt;ol&gt; и &lt;ul&gt; внутри контейнера &lt;menu&gt; список формируется с помощью тегов &lt;li&gt;.
+        <p>В HTML4 тег &lt;menu&gt; вышел из употребления, вместо него рекомендуется использовать тег &lt;ul&gt;. В HTML5 тег &lt;menu&gt; вновь включен, но уже в другом качестве. Теперь он выступает контейнером для тега &lt;command&gt; и создания меню.</p>
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>label</td>
+            <td>
+                &lt;menu label="текст"&gt; <br> 
+                ... <br> 
+                &lt;/menu&gt;
+            </td>
+            <td>
+                <p><strong>В этом выпуске:</strong></p>
+                <menu label="Список блюд">
+                 <li>Русская кухня. Уха бурлацкая</li>
+                 <li>Украинская кухня. Вареники</li>
+                 <li>Молдавская кухня. Паприкаш</li>
+                 <li>Кавказская кухня. Суп-харчо</li>
+                 <li>Прибалтийская кухня. Вертиняй</li>
+                </menu>
+            </td>
+            <td>
+                <p>Устанавливает видимую метку для меню, которая отображается в виде названия при использовании вложенных меню.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>
+                &lt;menu type="context | toolbar | list"&gt; <br> 
+                ... <br> 
+                &lt;/menu&gt;
+            </td>
+            <td>
+                <p><strong>В этом выпуске:</strong></p>
+                <menu label="Список блюд" type="context">
+                 <li>Русская кухня. Уха бурлацкая</li>
+                 <li>Украинская кухня. Вареники</li>
+                 <li>Молдавская кухня. Паприкаш</li>
+                 <li>Кавказская кухня. Суп-харчо</li>
+                 <li>Прибалтийская кухня. Вертиняй</li>
+                </menu>
+            </td>
+            <td>
+                <p>Используется для задания типа меню.</p>
+                <dl>
+                    <dt>context</dt> <dd>Создает контекстное меню.</dd>
+                    <dt>toolbar</dt> <dd>Меню в виде панели инструментов.</dd>
+                    <dt>list</dt> <dd>Меню в виде списка.</dd>
+                </dl>
+            </td>
+        </tr>
+    </table>
+
+    <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
+</body>
+</html>
