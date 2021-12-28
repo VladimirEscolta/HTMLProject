@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;marquee&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;marquee&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Тег &lt;marquee&gt; создает бегущую строку на странице. На самом деле содержимое контейнера &lt;marquee&gt; не ограничивается строками и позволяет перемещать (скролировать) любые элементы веб-страницы — изображения, текст, таблицы, элементы форм и т.д. Перемещение можно задать не только по горизонтали, но и вертикали, в этом случае указываются размеры области, в которой будет происходить движение.
+        <p>Первоначально тег &lt;marquee&gt; был предназначен только для браузера Internet Explorer, но современные версии других браузеров также понимают и поддерживают этот тег.</p>
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>behavior</td>
+            <td>
+                &lt;marquee behavior="alternate | scroll | slide"&gt;...&lt;/marquee&gt;
+            </td>
+            <td>
+                <marquee behavior="alternate">Текст. Параметр alternate</marquee>
+                <marquee behavior="scroll">Текст. Параметр scroll</marquee>
+                <marquee behavior="slide">Текст. Параметр slide</marquee>
+            </td>
+            <td>
+                <p>Устанавливает способ движения содержимого внутри элемента &lt;marquee&gt;.</p>
+                <dl>
+                    <dt>alternate</dt> <dd>Контент перемещается между правым и левым краем элемента.</dd>
+                    <dt>scroll</dt> <dd>Контент перемещается в направлении, заданным атрибутом direction, затем скрывается за пределами области, после чего начинает движение с начала.</dd>
+                    <dt>slide</dt> <dd>Контент перемещается в направлении, заданным атрибутом direction, доходит до края области и останавливается.</dd>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>bgcolor</td>
+            <td>
+                &lt;marquee bgcolor="цвет"&gt;...&lt;/marquee&gt;
+            </td>
+            <td>
+                <marquee behavior="alternate" bgcolor="yellow">Текст. Параметр alternate</marquee>
+            </td>
+            <td>
+                <p>Устанавливает цвет фона под содержимым элемента &lt;marquee&gt;.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>direction</td>
+            <td>
+                &lt;marquee direction="down | left | right | up"&gt;...&lt;/marquee&gt;
+            </td>
+            <td>
+                <marquee behavior="scroll" direction="right">Текст. Параметр scroll. Направление вправо.</marquee>
+            </td>
+            <td>
+                <p>Содержимое контейнера &lt;marquee&gt; может перемещаться в четырех направлениях, не только влево и вправо, но также вверх и вниз.</p>
+                <dl>
+                    <dt>down</dt> <dd>Движение сверху вниз.</dd>
+                    <dt>left</dt> <dd>Движение справа налево.</dd>
+                    <dt>right</dt> <dd>Движение в правую сторону.</dd>
+                    <dt>up</dt> <dd>Движение вверх.</dd>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>height</td>
+            <td>
+                &lt;marquee height="высота"&gt;...&lt;/marquee&gt;
+            </td>
+            <td>
+                <marquee behavior="scroll" direction="down" height="100">Текст. Параметр scroll. Высота блока 100.</marquee>
+            </td>
+            <td>
+                <p>Элемент &lt;marquee&gt; отображается как прямоугольник, ширина и высота которого устанавливаются, соответственно, с помощью атрибутов width и height. Прокрутка содержимого будет происходить в пределах заданных размеров. Допускается использовать значения в пикселах или процентах. Если установлена процентная запись, то размеры &lt;marquee&gt; вычисляются относительно родительского элемента, обычно это тег &lt;body&gt;. Иными словами, width="100%" означает, что элемент будет занимать всю доступную ширину веб-страницы.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>hspace</td>
+            <td>
+                &lt;marquee hspace="поле по горизонтали"&gt;...&lt;/marquee&gt;
+            </td>
+            <td>
+                <marquee behavior="scroll" direction="right" hspace="10">Текст. Параметр scroll. Отступ 10.</marquee>
+            </td>
+            <td>
+                <p>Атрибуты hspace и vspace предназначены для добавления пустого пространства вокруг содержимого &lt;marquee&gt;. hspace устанавливает поля слева и справа от элемента (по горизонтали), а vspace — сверху и снизу (по вертикали). Поля не увеличивают фоновую область под содержимым и служат для изменения расстояния между тегом &lt;marquee&gt; и другими элементами веб-страницы.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>loop</td>
+            <td>
+                &lt;marquee loop="число повторений"&gt;...&lt;/marquee&gt;
+            </td>
+            <td>
+                <marquee behavior="scroll" direction="left" loop="2">Текст. Параметр scroll. Повторять 2 раза.</marquee>
+            </td>
+            <td>
+                <p>Устанавливает, сколько раз скролировать содержимое тега &lt;marquee&gt;. После того, как заданное число раз отсчитано, содержимое остается в конечной точке.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>scrollamount</td>
+            <td>
+                &lt;marquee scrollamount="значение"&gt;...&lt;/marquee&gt;
+            </td>
+            <td>
+                <marquee behavior="scroll" direction="down" height="50" scrollamount="2">Текст. Параметр scroll. Скорость 2.</marquee>
+            </td>
+            <td>
+                <p>Анимация содержимого элемента &lt;marquee&gt; происходит за счет периодического стирания информации и отображения ее на новом месте. Аатрибут scrollamount устанавливает расстояние в пикселах между старым и новым положениями, которые влияют на скорость движения и плавность хода. Чем выше значение, тем быстрее перемещается содержимое контейнера. Если значение равно нулю, то движения не происходит.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>scrolldelay</td>
+            <td>
+                &lt;marquee scrolldelay="число"&gt;...&lt;/marquee&gt;
+            </td>
+            <td>
+                <marquee behavior="scroll" direction="up" height="50" scrollamount="3" scrolldelay="300">Текст. Параметр scroll. Задержка.</marquee>
+            </td>
+            <td>
+                <p>На скорость скролирования, как и изменение позиции, влияет частота обновления содержания. Атрибут scrolldelay задает время задержки между движениями в миллисекундах, чем ниже значение, тем выше скорость движения, и наоборот.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>truespeed</td>
+            <td>
+                &lt;marquee truespeed&gt;...&lt;/marquee&gt;
+            </td>
+            <td>
+                <marquee behavior="scroll" height="50" scrolldelay="3" truespeed>Текст. Параметр scroll. Ограничение снято.</marquee>
+            </td>
+            <td>
+                <p>Если содержимое тега &lt;marquee&gt; перемещается слишком быстро, то срабатывает встроенный ограничитель скорости, который насильно замедляет скролирование. Это сделано для того, чтобы сохранить читабельность текста. Если вы намерены обойти это ограничение, добавьте атрибут truespeed, он заставляет прокручиваться содержимое с заданной скоростью. Для атрибута scrolldelay ограничение скорости начинается со значения 60 миллисекунд и ниже.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>vspace</td>
+            <td>
+                &lt;marquee vspace="поле по вертикали"&gt;...&lt;/marquee&gt;
+            </td>
+            <td>
+                <marquee behavior="scroll" direction="right" vspace="10">Текст. Параметр scroll. Отступ 10.</marquee>
+            </td>
+            <td>
+                <p>Атрибуты hspace и vspace предназначены для добавления пустого пространства вокруг содержимого &lt;marquee&gt;. hspace устанавливает поля слева и справа от элемента (по горизонтали), а vspace — сверху и снизу (по вертикали). Поля не увеличивают фоновую область под содержимым и служат для изменения расстояния между тегом &lt;marquee&gt; и другими элементами веб-страницы.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td>
+                &lt;marquee width="значение"&gt;...&lt;/marquee&gt;
+            </td>
+            <td>
+                <marquee behavior="scroll" direction="down" height="100" width="200">Текст. Параметр scroll. Ширина блока 200.</marquee>
+            </td>
+            <td>
+                <p>Элемент &lt;marquee&gt; отображается как прямоугольник, ширина и высота которого устанавливаются, соответственно, с помощью атрибутов width и height. Прокрутка содержимого будет происходить в пределах заданных размеров. Допускается использовать значения в пикселах или процентах. Если установлена процентная запись, то размеры &lt;marquee&gt; вычисляются относительно родительского элемента, обычно это тег &lt;body&gt;. Иными словами, width="100%" означает, что элемент будет занимать всю доступную ширину веб-страницы.</p>
+            </td>
+        </tr>
+    </table>
+
+    <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
+</body>
+</html>
