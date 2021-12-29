@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;ol&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;ol&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Тег &lt;ol&gt; устанавливает нумерованный список. Каждый элемент списка должен начинаться с тега &lt;li&gt;. Если к тегу &lt;ol&gt; применяется таблица стилей, то элементы &lt;li&gt; наследуют эти свойства.
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>type</td>
+            <td>
+                &lt;ol type="A | a | I | i | 1"&gt;...&lt;/ol>&gt;
+            </td>
+            <td>
+                <ol type="a">
+                    <li>Привет</li>
+                    <li>Пока</li>
+                    <li>Ок</li>
+                </ol>
+                <ol type="1">
+                    <li>Привет</li>
+                    <li>Пока</li>
+                    <li>Ок</li>
+                </ol>
+            </td>
+            <td>
+                <p>Устанавливает вид маркера.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>reversed</td>
+            <td>
+                &lt;ol reversed&gt;...&lt;/ol>&gt;
+            </td>
+            <td>
+                <ol type="1" reversed>
+                    <li>Привет</li>
+                    <li>Пока</li>
+                    <li>Ок</li>
+                </ol>
+            </td>
+            <td>
+                <p>Меняет нумерацию в списке на обратный порядок, вместо 1,2,3 будет выводиться 3,2,1.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>start</td>
+            <td>
+                &lt;ol start="число"&gt;...&lt;/ol>&gt;
+            </td>
+            <td>
+                <ol type="1" start="5">
+                    <li>Привет</li>
+                    <li>Пока</li>
+                    <li>Ок</li>
+                </ol>
+            </td>
+            <td>
+                <p>Атрибут start устанавливает номер, с которого будет начинаться список. При этом не имеет значения, какой тип списка установлен с помощью type, атрибут start одинаково работает и с римскими и с арабскими числами.</p>
+            </td>
+        </tr>
+    </table>
+
+    <h5> 
+        <p> Также для тега доступны <a href="universal_attributes.html">Универсальные атрибуты</a> и <a href="developments.html">События</a></p> <br> 
+    </h5>
+    <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
+</body>
+
+</html>
