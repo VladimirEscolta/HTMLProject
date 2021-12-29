@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;optgroup&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;optgroup&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Тег &lt;optgroup&gt; представляет собой контейнер, внутри которого располагаются теги &lt;option&gt; объединенные в одну группу. Особенностью тега &lt;optgroup&gt; является то, что он не выделяется как обычный элемент списка, акцентируется с помощью жирного начертания, а все элементы, входящие в этот контейнер, смещаются вправо от своего исходного положения.
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>disabled</td>
+            <td>
+                &lt;optgroup disabled&gt;...&lt;/optgroup>&gt;
+            </td>
+            <td>
+                <form>
+                    <p><select>
+                     <optgroup label="Цвет">
+                      <option value="c1">Апельсиновый</option>
+                      <option value="c2">Лимонный</option>
+                      <option value="c3">Персиковый</option>
+                     </optgroup>
+                     <optgroup label="Тон" disabled>
+                      <option value="s1">Светлый</option>
+                      <option value="s2">Нормальный</option>
+                      <option value="s3">Темный</option>
+                     </optgroup>
+                    </select></p>
+                    <p><input type="submit" value="Отправить"></p>
+                </form>
+            </td>
+            <td>
+                <p>Блокирует доступ к группе списка, при этом группа отображается другим цветом (обычно серым) и недоступна для выбора.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>label</td>
+            <td>
+                &lt;optgroup label="текст"&gt;...&lt;/optgroup>&gt;
+            </td>
+            <td>
+                <form>
+                    <p><select>
+                     <optgroup label="Цвет">
+                      <option value="c1">Апельсиновый</option>
+                      <option value="c2">Лимонный</option>
+                      <option value="c3">Персиковый</option>
+                     </optgroup>
+                     <optgroup label="Тон">
+                      <option value="s1">Светлый</option>
+                      <option value="s2">Нормальный</option>
+                      <option value="s3">Темный</option>
+                     </optgroup>
+                    </select></p>
+                    <p><input type="submit" value="Отправить"></p>
+                </form>
+            </td>
+            <td>
+                <p>Текст, который будет входить в список в виде заголовка группы. Это обычная текстовая строка без всяких кодов HTML.</p>
+            </td>
+        </tr>
+    </table>
+
+    <h5> 
+        <p> Также для тега доступны <a href="universal_attributes.html">Универсальные атрибуты</a> и <a href="developments.html">События</a></p> <br> 
+    </h5>
+    <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
+</body>
+
+</html>
