@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;option&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;option&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Тег &lt;option&gt; определяет отдельные пункты списка, создаваемого с помощью контейнера &lt;select&gt;. Ширина списка определяется самым широким текстом, указанным в теге &lt;option&gt;, а также может изменяться с помощью стилей. Если планируется отправлять данные списка на сервер, то требуется поместить элемент &lt;select&gt; внутрь формы. Это также необходимо, когда к данным списка идет обращение через скрипты.
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>disabled</td>
+            <td>
+                &lt;option disabled&gt;...&lt;/option>&gt;
+            </td>
+            <td>
+                <form>
+                    <select>
+                        <optgroup label="Продукты">
+                            <option value="c1">Молоко</option>
+                            <option value="c2" disabled>Сметана</option>
+                            <option value="c3">Йогурт</option>
+                        </optgroup>
+                    </select>
+                </form>
+            </td>
+            <td>
+                <p>Блокирует элемент списка для его выбора.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>label</td>
+            <td>
+                &lt;option label="текст"&gt;...&lt;/option>&gt;
+            </td>
+            <td>
+                <form>
+                    <select>
+                        <optgroup label="Продукты">
+                            <option label="Молоко" value="1">Молоко Кунгурское</option>
+                            <option label="Сметана" value="2">Сметана Ашатли</option>
+                            <option label="Йогурт" value="3">Йогурт Данон</option>
+                        </optgroup>
+                    </select>
+                </form>
+            </td>
+            <td>
+                <p>Атрибут предназначен для указания метки пункта списка, сокращённой по сравнению с текстом внутри &lt;option>&gt;. Если атрибут label присутствует, то текст внутри тега &lt;option>&gt; игнорируется и в списке выводится значение label.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>selected</td>
+            <td>
+                &lt;option selected&gt;...&lt;/option>&gt;
+            </td>
+            <td>
+                <form>
+                    <select>
+                        <optgroup label="Продукты">
+                            <option value="1">Сок</option>
+                            <option value="2" selected>Вода</option>
+                            <option value="3">Йогурт</option>
+                        </optgroup>
+                    </select>
+                </form>
+            </td>
+            <td>
+                <p>Делает текущий пункт списка выделенным. Если у тега &lt;select&gt; добавлен атрибут multiple, то можно выделять более одного пункта.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>value</td>
+            <td>
+                &lt;option value="значение"&gt;...&lt;/option>&gt;
+            </td>
+            <td>
+                <form>
+                    <select>
+                        <optgroup label="Продукты">
+                            <option value="1">Сок</option>
+                            <option value="2">Вода</option>
+                            <option value="3" selected>Йогурт</option>
+                        </optgroup>
+                    </select>
+                </form>
+            </td>
+            <td>
+                <p>Определяет значение пункта списка, которое будет отправлено на сервер. На сервер отправляется пара «имя=значение», где имя задается атрибутом name тега &lt;select&gt;, а значение — атрибутом value выделенных пунктов списка. Значение может как совпадать с текстом пункта, так быть и самостоятельным. Также атрибут value применяется для получения значений данных через скрипты.</p>
+            </td>
+        </tr>
+    </table>
+
+    <h5> 
+        <p> Также для тега доступны <a href="universal_attributes.html">Универсальные атрибуты</a> и <a href="developments.html">События</a></p> <br> 
+    </h5>
+    <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
+</body>
+
+</html>
