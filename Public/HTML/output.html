@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;output&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;output&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Определяет область в которую выводится информация, преимущественно с помощью скриптов.
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>...</td>
+            <td>
+                &lt;output&gt;...&lt;/output>&gt;
+            </td>
+            <td>
+                <form oninput="result.value=(дол.value*75.42).toFixed(2)">
+                    Введите количество долларов: 
+                    <input type="number" name="дол" autofocus> <br>
+                    В рублях: <output name="result">0</output>
+                </form>
+            </td>
+            <td>
+                <p>Атрибуты:</p>
+                <dl>
+                    <dt>for</dt> <dd>Определяет идентификатор одного и более элементов для связывания с тегом &lt;output&gt;.</dd>
+                    <dt>form</dt> <dd>Задает имя формы, которой принадлежит область для вывода.</dd>
+                    <dt>name</dt> <dd>Задает уникальное имя элемента.</dd>
+                </d>
+            </td>
+        </tr>
+    </table>
+
+    <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
+</body>
+
+</html>
