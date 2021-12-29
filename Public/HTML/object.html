@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;object&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;object&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Элемент &lt;object&gt; сообщает браузеру, как загружать и отображать объекты, которые исходно браузер не понимает. Как правило, такие объекты требуют подключения к браузеру специального модуля, который называется плагин, или запуска вспомогательной программы.
+        <p>Спецификация HTML 4 разрешает вкладывать несколько тегов &lt;object&gt; с разным содержанием друг в друга. Это позволяет отображать тот контент, который понимает браузер, при отсутствии нужного плагина. Например, внешний тег &lt;object&gt; загружает видеофайл, а для случая, когда соответствующий кодек (программа для сжатия и восстановления видеоданных) не установлен, внутренний тег &lt;object&gt; показывает графическое изображение. Дополнительно внутрь контейнера &lt;object&gt; можно поместить тег &lt;param&gt;, который передает дополнительные параметры для отображения объекта.</p>
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;object align="absmiddle | baseline | bottom | left | middle | right | texttop | top"&gt;...&lt;/object&gt;
+            </td>
+            <td>
+                <p><object data="../../Images/git.jpg" width="300" align="right"></object></p>
+                <p>Случайный текст.</p>
+            </td>
+            <td>
+                <p>Определяет выравнивание объекта на странице и способ его отображения совместно с другими нижележащими элементами вроде текста.</p>
+                <dl>
+                    <dt>absmiddle</dt> <dd>Выравнивание середины объекта по середине текущей строки.</dd>
+                    <dt>baseline</dt> <dd>Выравнивание объекта по базовой линии текущей строки.</dd>
+                    <dt>bottom</dt> <dd>Выравнивание нижней границы объекта по окружающему тексту.</dd>
+                    <dt>left</dt> <dd>Выравнивает объект по левому краю окна, текст обтекает его справа.</dd>
+                    <dt>middle</dt> <dd>Выравнивание середины объекта по базовой линии текущей строки.</dd>
+                    <dt>right</dt> <dd>Выравнивает объект по правому краю окна, текст обтекает слева.</dd>
+                    <dt>texttop</dt> <dd>Верхняя граница объекта выравнивается по самому высокому текстовому элементу текущей строки.</dd>
+                    <dt>top</dt> <dd>Верхняя граница объекта выравнивается по самому высокому элементу текущей строки.</dd>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>archive</td>
+            <td>
+                &lt;object archive="URL"&gt;...&lt;/object&gt;
+            </td>
+            <td>
+                Пример: <br><br>
+                &lt;object classid="java:Clock.class" codetype="application/java" 
+                    width="100" height="20" archive="clock.jar"&gt;Произвольный объект&lt;/object&gt;
+            </td>
+            <td>
+                <p>Атрибут archive позволяет задать произвольное число файлов необходимых для корректной работы объекта или для его отображения. Файлы перечисляются через пробел вместе с полным или локальным адресом.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>classid</td>
+            <td>
+                &lt;object classid="URL"&gt;...&lt;/object&gt;
+            </td>
+            <td>
+                Пример: <br><br>
+                &lt;object codetype="application/java-vm" codebase="http://htmlbook.ru/applet.class"
+                    classid="java:program.start" height="100" width="100"&gt;
+                    &lt;param name="options" value="que"&gt;
+                &lt;/object&gt;
+            </td>
+            <td>
+                <p>Адрес программы, которая работает с данным объектом, и будет запускать его. Атрибут classid указывает браузеру, какую программу, плагин или апплет нужно загрузить. Можно также использовать идентификатор зарегистрированного ActiveX приложения, предваряя его ключевым словом clsid.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>code</td>
+            <td>
+                &lt;object code="имя класса"&gt;...&lt;/object&gt;
+            </td>
+            <td>
+                Пример: <br><br>
+                &lt;object code="clock.class"&gt;&lt;/object&gt;
+            </td>
+            <td>
+                <p>Атрибут code используется для замены тега &lt;applet&gt;, который загружает и выполняет Java-aпплет. В качестве значения code используется имя класса Java-апплета (файл с расширением class). Если файл располагается не в той же папке что и текущий документ, то следует указать путь к нему через атрибут codebase. Работает только в браузере Internet Explorer.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>codebase</td>
+            <td>
+                &lt;object&gt;&lt;/object&gt;
+            </td>
+            <td>
+               
+            </td>
+            <td>
+               
+            </td>
+        </tr>
+        <tr>
+            <td>codetype</td>
+            <td>
+                &lt;object&gt;&lt;/object&gt;
+            </td>
+            <td>
+               
+            </td>
+            <td>
+               
+            </td>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>
+                &lt;object&gt;&lt;/object&gt;
+            </td>
+            <td>
+               
+            </td>
+            <td>
+               
+            </td>
+        </tr>
+        <tr>
+            <td>height</td>
+            <td>
+                &lt;object&gt;&lt;/object&gt;
+            </td>
+            <td>
+               
+            </td>
+            <td>
+               
+            </td>
+        </tr>
+        <tr>
+            <td>hspace</td>
+            <td>
+                &lt;object&gt;&lt;/object&gt;
+            </td>
+            <td>
+               
+            </td>
+            <td>
+               
+            </td>
+        </tr>
+        <tr>
+            <td>tabindex</td>
+            <td>
+                &lt;object&gt;&lt;/object&gt;
+            </td>
+            <td>
+               
+            </td>
+            <td>
+               
+            </td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>
+                &lt;object&gt;&lt;/object&gt;
+            </td>
+            <td>
+               
+            </td>
+            <td>
+               
+            </td>
+        </tr>
+        <tr>
+            <td>vspace</td>
+            <td>
+                &lt;object&gt;&lt;/object&gt;
+            </td>
+            <td>
+               
+            </td>
+            <td>
+               
+            </td>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td>
+                &lt;object&gt;&lt;/object&gt;
+            </td>
+            <td>
+               
+            </td>
+            <td>
+               
+            </td>
+        </tr>
+    </table>
+
+    <h5> 
+        <p> Также для тега доступны <a href="universal_attributes.html">Универсальные атрибуты</a> и <a href="developments.html">События</a></p> <br> 
+    </h5>
+    <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
+</body>
+
+</html>
