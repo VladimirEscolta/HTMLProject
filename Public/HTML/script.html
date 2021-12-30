@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;script&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+    <script defer>
+        document.forms[0].textField.value = 17;
+    </script>
+    <script type="text/vbscript" language="VBScript"> VB = 1 </script>
+    <script type="text/javascript" language="JavaScript"> JS = 1; </script>
+    <script type="text/javascript" language="JavaScript1.1"> JS11 = 1; </script>
+    <script type="text/javascript" language="JavaScript1.2"> JS12 = 1; </script>
+    <script type="text/javascript" language="JavaScript1.3"> JS13 = 1; </script>
+    <script type="text/javascript" language="JavaScript1.4"> JS14 = 1; </script>
+    <script type="text/javascript" language="JavaScript1.5"> JS15 = 1; </script> 
+    <script type="text/javascript" language="JavaScript">
+      document.write("<b>Поддерживаемые языки:<\/b><br>");
+      if(window.JS) document.write("JavaScript<br>");
+      if(window.JS11) document.write("JavaScript 1.1<br>");
+      if(window.JS12) document.write("JavaScript 1.2<br>");
+      if(window.JS13) document.write("JavaScript 1.3<br>");
+      if(window.JS14) document.write("JavaScript 1.4<br>");
+      if(window.JS15) document.write("JavaScript 1.5<br>");
+      if(window.VB) document.write("Visual Basic<br>");
+    </script>
+</head>
+<body>
+    <h1>Тег &lt;script&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Тег &lt;script&gt; предназначен для описания скриптов, может содержать ссылку на программу или ее текст на определенном языке. Скрипты могут располагаться во внешнем файле и связываться с любым HTML-документом. Такой подход позволяет использовать одни и те же общие функции на многих веб-страницах и ускоряет их загрузку, т.к. внешний файл кэшируется при первой загрузке, и скрипт вызывается быстрее при последующих вызовах.
+        <p>&lt;script&gt; может располагаться в заголовке или теле HTML-документа в неограниченном количестве. В большинстве случаев местоположение скрипта никак не сказывается на работу программы. Однако скрипты, которые должны выполняться в первую очередь, обычно помещают в заголовок документа.</p>
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>async</td>
+            <td>
+                &lt;script async&gt;...&lt;/script&gt;
+            </td>
+            <td>
+                <script async>
+                    let d = new Date();
+                    alert("Today's date is " + d);
+                </script>
+            </td>
+            <td>
+                <p>При наличии атрибута async браузер при возможности запускает скрипт асинхронно. Это означает, что указанный в атрибуте src файл будет выполняться без ожидания загрузки и отображения веб-страницы. В то же время и страница не ожидает результата выполнения скрипта, а продолжает загружаться как обычно.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>defer</td>
+            <td>
+                &lt;script defer&gt;...&lt;/script&gt;
+            </td>
+            <td>
+                <form action="handler.php">
+                    <p>Введите ваш возраст</p>
+                    <p><input type="text" name="textField"></p>
+                </form>
+            </td>
+            <td>
+                <p>Атрибут defer откладывает выполнение скрипта до тех пор, пока вся страница не будет загружена полностью.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>language</td>
+            <td>
+                &lt;script&gt;...&lt;/script&gt;
+            </td>
+            <td>
+                ...
+            </td>
+            <td>
+                <p>Атрибут language указывает язык написания скрипта. Данный атрибут осуждается, а вместо него следует применять type, который указывает MIME-тип для определенного языка.</p>
+                <dl>
+                    <dt>JavaScript</dt> <dd>язык программирования JavaScript. К этому значению часто еще присоединяют номер версии, например — JavaScript1.3.</dd>
+                    <dt>JScript</dt> <dd>Разновидность языка JavaScript разработанная компанией Microsoft. Смена названия продиктована тем, что имя JavaScript уже было зарегистрировано, при этом различия между языками состоят не только в названии, но и в подходах.</dd>
+                    <dt>VBS VBScript</dt> <dd>Язык программирования VBScript основанный на Visual Basic. Является детищем Microsoft и поддерживается преимущественно браузером Internet Explorer.</dd>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>src</td>
+            <td>
+                &lt;script src="URL"&gt;...&lt;/script&gt;
+            </td>
+            <td>
+                ...
+            </td>
+            <td>
+                <p>Импортирует файл со скриптами из внешнего файла. Как только внешние инструкции полностью загружаются, браузер обрабатывает их, словно они были внедрены в текущий документ. Файлы со скриптами JavaScript обычно имеют расширение js и могут размещаться в любом доступном месте.</p>
+                <p>Преимуществ использования внешних файлов несколько. Внешний файл после первого обращения сохраняется в кэше браузера и при последующих вызовах загружается быстрее. Кроме того, вызываемые функции удобно править в одном месте и код проще контролировать. Это особенно актуально, когда множество веб-страниц используют одни и те же скрипты.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>
+                &lt;script type="MIME-тип"&gt;...&lt;/script&gt;
+            </td>
+            <td>
+                ...
+            </td>
+            <td>
+                <p>Указывает тип MIME для определенного языка.</p>
+                <p>Атрибут type не чувствителен к регистру и принимает следующие значения:</p>
+                <dl>
+                    <dt>text/javascript</dt> <dd>Для языка программирования JavaScript.</dd>
+                    <dt>text/vbscript</dt> <dd>Для языка VBScript.</dd>
+                </dl>
+            </td>
+        </tr>
+    </table>
+
+    <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
+</body>
+
+</html>
