@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;param&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;param&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Тег &lt;param&gt; предназначен для передачи значений параметров Java-апплетам или объектам веб-страницы, созданным с помощью тегов &lt;applet&gt; или &lt;object&gt;. Такой подход позволяет прямо в коде HTML-документа изменять характеристики апплета без его дополнительной компиляции. Количество одновременно используемых тегов <param> может быть больше одного и для каждого из них задается пара «имя/значение» через атрибуты name и value.
+        <p>Апплетом называется программа, которая выполняется в составе браузера или под управлением специальной программы для ее просмотра. Апплет, как правило, пишется на языке Java, поэтому часто можно встретить сочетание «Java-апплет».</p>
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>name</td>
+            <td>
+                &lt;param name="имя"&gt;
+            </td>
+            <td>
+                Пример: <br><br>
+                &lt;object width="300" height="300"&gt; <br>
+                    &lt;param name="src" value="video/snowman.mp4" valuetype="ref" type="video/mp4" /&gt; <br>
+                &lt;/object&gt;
+            </td>
+            <td>
+                <p>Определяет уникальное имя параметра. Это имя должно быть программно заложено в код апплета или объекта.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>
+                &lt;param type="MIME-тип"&gt;
+            </td>
+            <td>
+                Пример: <br><br>
+                &lt;object width="300" height="300"&gt; <br>
+                    &lt;param name="src" value="video/snowman.mp4" valuetype="ref" type="video/mp4" /&gt; <br>
+                &lt;/object&gt;
+            </td>
+            <td>
+                <p>Атрибут type позволяет установить MIME-тип содержимого тегов &lt;object&gt; или &lt;applet&gt;. В большинстве случаев этот атрибут не требуется, так как браузер сам определяет тип на основе расширения файла или заголовка отправляемого сервером.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>value</td>
+            <td>
+                &lt;param name="..." value="значение"&gt;
+            </td>
+            <td>
+                Пример: <br><br>
+                &lt;object width="300" height="300"&gt; <br>
+                    &lt;param name="src" value="video/snowman.mp4" valuetype="ref" type="video/mp4" /&gt; <br>
+                &lt;/object&gt;
+            </td>
+            <td>
+                <p>Задает значение. Этот атрибут не является обязательным, поскольку для апплета или объекта вполне может быть достаточно одного имени, задаваемым атрибутом name.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>valuetype</td>
+            <td>
+                &lt;param valuetype="data | object | ref"&gt;
+            </td>
+            <td>
+                Пример: <br><br>
+                &lt;object width="300" height="300"&gt; <br>
+                    &lt;param name="src" value="video/snowman.mp4" valuetype="ref" type="video/mp4" /&gt; <br>
+                &lt;/object&gt;
+            </td>
+            <td>
+                <p>Атрибут valuetype обеспечивает механизм определения типа данных передаваемых родительскому объекту через атрибут value.</p>
+                <dl>
+                    <dt>data</dt> <dd>Значение атрибута является строкой.</dd>
+                    <dt>object</dt> <dd>Идентификатор объекта на странице, который задается через атрибут id.</dd>
+                    <dt>ref</dt> <dd>Значением атрибута выступает URL.</dd>
+                </dl>
+            </td>
+        </tr>
+    </table>
+
+    <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
+</body>
+
+</html>
