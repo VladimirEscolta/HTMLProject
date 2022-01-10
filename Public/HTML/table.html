@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;table&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;table&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Элемент &lt;table&gt; служит контейнером для элементов, определяющих содержимое таблицы. Любая таблица состоит из строк и ячеек, которые задаются с помощью тегов &lt;tr&gt; и &lt;td&gt;. Внутри &lt;table&gt; допустимо использовать следующие элементы: &lt;caption&gt;, &lt;col&gt;, &lt;colgroup&gt;, &lt;tbody&gt;, &lt;td&gt;, &lt;tfoot&gt;, &lt;th&gt;, &lt;thead&gt; и &lt;tr&gt;.
+        <p>Таблицы с невидимой границей долгое время использовались для верстки веб-страниц, позволяя разделять документ на модульные блоки. Подобный способ применения таблиц нашел воплощение на многих сайтах, пока ему на смену не пришел более современный способ верстки с помощью слоев.</p>
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;table align="left | center | right"&gt;...&lt;/table &gt;
+            </td>
+            <td>
+               <table align="center" border="2" bordercolor='red' width=200>
+                   <tr>
+                       <td>...</td>
+                       <td>...</td>
+                   </tr>
+                   <tr>
+                       <td>...</td>
+                       <td>...</td>
+                   </tr>
+               </table>
+            </td>
+            <td>
+                <p>Задает выравнивание таблицы по краю окна браузера.</p>
+                <dl>
+                    <dt>left</dt> <dd>Выравнивание таблицы по левому краю.</dd>
+                    <dt>center</dt> <dd>Выравнивание таблицы по центру.</dd>
+                    <dt>right</dt> <dd>Выравнивание по правому краю.</dd>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>background</td>
+            <td>
+                &lt;table background="URL"&gt;...&lt;/table &gt;
+            </td>
+            <td>
+                <table align="left" background='../../Images/git.jpg' border="2" bordercolor='yellow' width=250>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+              <p>Определяет изображение, которое будет использоваться в качестве фонового рисунка таблицы. В отличие от обычных изображений, для фона не устанавливаются ширина и высота, и он всегда отображается в натуральную величину с масштабом 100%. Если рисунок по размеру меньше ширины или высоты таблицы, то картинка повторяется по горизонтали вправо и вниз, выстраиваясь, как мозаика. По этой причине на месте стыка фоновых картинок могут возникнуть видимые перепады, заметные для посетителей сайта. При выборе фонового рисунка убедитесь, что обеспечен достаточный контраст между ним и содержимым таблицы. В качестве фона допускается использовать анимированные изображения в формате GIF, но они отвлекают внимание читателей.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>bgcolor</td>
+            <td>
+                &lt;table bgcolor="цвет"&gt;...&lt;/table &gt;
+            </td>
+            <td>
+                <table align="left" bgcolor='green' border="2" bordercolor='yellow' width=250>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Устанавливает цвет фона таблицы. Можно использовать этот атрибут совместно с background, подобрав цвет фона близкий к фоновому рисунку</p>
+            </td>
+        </tr>
+        <tr>
+            <td>border</td>
+            <td>
+                &lt;table border="толщина"&gt;...&lt;/table &gt;
+            </td>
+            <td>
+                <table align="center" border="4" bordercolor='black' width=200>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Устанавливает толщину рамки в пикселах. По умолчанию рамка изображается трехмерной, но если используется атрибут bordercolor тега &lt;table&gt;, то вид рамки меняется в зависимости от браузера. Когда в теге &lt;table&gt; используется атрибут border без значений (&lt;table border&gt;), то браузер отображает рамку толщиной один пиксел.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>bordercolor</td>
+            <td>
+                &lt;table bordercolor="цвет"&gt;...&lt;/table &gt;
+            </td>
+            <td>
+                <table align="center" border="4" bordercolor='orange' width=200>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Устанавливает цвет рамки таблицы. Рамка обычно рисуется как трехмерная, добавление атрибутов bordercolor и border к тегу &lt;table&gt; создают однотонную линию.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>cellpadding</td>
+            <td>
+                &lt;table cellpadding="значение"&gt;...&lt;/table &gt;
+            </td>
+            <td>
+                <table align="center" border="4" bordercolor='orange' width=200 cellpadding='5'>
+                    <tr>
+                        <td>First</td>
+                        <td>Second</td>
+                    </tr>
+                    <tr>
+                        <td>Third</td>
+                        <td>Fourth</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Определяет расстояние между границей ячейки и ее содержимым. Этот атрибут добавляет пустое пространство к ячейке, увеличивая тем самым ее размеры. Без cellpadding текст в таблице «налипает» на рамку, снижая тем самым его восприятие. Добавление же cellpadding позволяет улучшить читабельность текста. При отсутствии границ особого значения этот атрибут не имеет, но может помочь, когда требуется установить пустой промежуток между ячейками.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>cellspacing</td>
+            <td>
+                &lt;table cellspacing="значение"&gt;...&lt;/table &gt;
+            </td>
+            <td>
+                <table align="center" border="4" bordercolor='orange' width=200 cellspacing='5'>
+                    <tr>
+                        <td>First</td>
+                        <td>Second</td>
+                    </tr>
+                    <tr>
+                        <td>Third</td>
+                        <td>Fourth</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Задает расстояние между внешними границами ячеек. Если установлен атрибут border, толщина границы принимается в расчет.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>cols</td>
+            <td>
+                &lt;table cols="число"&gt;...&lt;/table &gt;
+            </td>
+            <td>
+                <table align="center" border="4" cols='2' width=200>
+                    <tr>
+                        <td>First</td>
+                        <td>Second</td>
+                    </tr>
+                    <tr>
+                        <td>Third</td>
+                        <td>Fourth</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Атрибут cols задает количество столбцов в таблице, помогая браузеру в подготовке к ее отображению. Без этого атрибута таблица будет показана только после того, как все содержимое таблицы будет загружено в браузер и проанализировано. Использование атрибута cols позволяет несколько ускорить отображение содержимого таблицы.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>frame</td>
+            <td>
+                &lt;table frame="значение"&gt;...&lt;/table &gt;
+            </td>
+            <td>
+                <table frame='below' align="left" border="4" width=250>
+                    <tr>
+                        <td>First</td>
+                        <td>Second</td>
+                    </tr>
+                    <tr>
+                        <td>Third</td>
+                        <td>Fourth</td>
+                    </tr>
+                </table> 
+                <br><br><br><br>
+                <table frame='vsides' align="right" border="3" width=250>
+                    <tr>
+                        <td>First</td>
+                        <td>Second</td>
+                    </tr>
+                    <tr>
+                        <td>Third</td>
+                        <td>Fourth</td>
+                    </tr>
+                </table>
+                <br><br><br><br>
+                <table frame='hsides' align="center" border="3" width=250>
+                    <tr>
+                        <td>First</td>
+                        <td>Second</td>
+                    </tr>
+                    <tr>
+                        <td>Third</td>
+                        <td>Fourth</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Сообщает браузеру, как отображать границы вокруг таблицы. Толщина границы указывается с помощью атрибута border.</p>
+                <dl>
+                    <dt>void</dt> <dd>Не отрисовывать границы.</dd>
+                    <dt>border</dt> <dd>Граница вокруг таблицы.</dd>
+                    <dt>above</dt> <dd>Граница по верхнему краю таблицы.</dd>
+                    <dt>below</dt> <dd>Граница снизу таблицы.</dd>
+                    <dt>hsides</dt> <dd>Добавить только горизонтальные границы (сверху и снизу таблицы).</dd>
+                    <dt>vsides</dt> <dd>Рисовать только вертикальные границы (слева и справа от таблицы).</dd>
+                    <dt>rhs</dt> <dd>Граница только на правой стороне таблицы.</dd>
+                    <dt>lhs</dt> <dd>Граница только на левой стороне таблицы.</dd>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>height</td>
+            <td>
+                &lt;table height="значение"&gt;...&lt;/table &gt;
+            </td>
+            <td>
+                <table align="center" border="4" cols='2' height='150' width=200>
+                    <tr>
+                        <td>First</td>
+                        <td>Second</td>
+                    </tr>
+                    <tr>
+                        <td>Third</td>
+                        <td>Fourth</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Устанавливает высоту таблицы. В спецификации HTML 4 этого атрибута нет, однако браузеры в большинстве случаев понимают его, если не установлен &lt;!DOCTYPE&gt;. В том случае, когда в документе задан &lt;!DOCTYPE&gt;, браузеры высоту таблицы, заданную через атрибут height, игнорируют.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>rules</td>
+            <td>
+                &lt;table rules="значение"&gt;...&lt;/table &gt;
+            </td>
+            <td>
+                <table align="left" border="4" cols='2' height='50' width=200 rules='cols'>
+                    <tr>
+                        <td>First</td>
+                        <td>Second</td>
+                    </tr>
+                    <tr>
+                        <td>Third</td>
+                        <td>Fourth</td>
+                    </tr>
+                </table>
+                <br><br><br><br>
+                <table align="center" border="4" cols='2' height='50' width=200 rules='rows'>
+                    <tr>
+                        <td>First</td>
+                        <td>Second</td>
+                    </tr>
+                    <tr>
+                        <td>Third</td>
+                        <td>Fourth</td>
+                    </tr>
+                </table>
+                <br>
+                <table align="right" border="4" cols='2' height='50' width=200 rules='none'>
+                    <tr>
+                        <td>First</td>
+                        <td>Second</td>
+                    </tr>
+                    <tr>
+                        <td>Third</td>
+                        <td>Fourth</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Сообщает браузеру, где отображать границы между ячейками. Цвет границы указывается с помощью атрибута bordercolor, толщина внешней рамки таблицы — через атрибут border. По умолчанию рамка рисуется вокруг каждой ячейки, образуя тем самым сетку; толщина таких линий составляет 1px.</p>
+                <dl>
+                    <dt>all</dt> <dd>Линия рисуется вокруг каждой ячейки таблицы.</dd>
+                    <dt>groups</dt> <dd>Линия отображается между группами, которые образуются тегами &lt;thead&gt;, &lt;tfoot&gt;, &lt;tbody&gt;, &lt;colgroup&gt; или &lt;col&gt;.</dd>
+                    <dt>cols</dt> <dd>Линия отображается между колонками.</dd>
+                    <dt>none</dt> <dd>Все границы скрываются.</dd>
+                    <dt>rows</dt> <dd>Граница рисуется между строками таблицы, созданых через тег &lt;tr&gt;.</dd>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>summary</td>
+            <td>
+                &lt;table summary="текст"&gt;...&lt;/table &gt;
+            </td>
+            <td>
+                <table align="right" border="4" width=250 summary='тестовая таблица'>
+                    <tr>
+                        <td>First</td>
+                        <td>Second</td>
+                    </tr>
+                    <tr>
+                        <td>Third</td>
+                        <td>Fourth</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Атрибут summary предназначен для краткого описания таблицы или указания ее предназначения. В отличие от тега &lt;caption&gt; содержимое summary никак не отображается и в браузере не выводится, однако может использоваться поисковыми системами или речевыми браузерами.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td>
+                &lt;table width="значение"&gt;...&lt;/table &gt;
+            </td>
+            <td>
+                <table align="left" border="4" width='100'>
+                    <tr>
+                        <td>First</td>
+                        <td>Second</td>
+                    </tr>
+                    <tr>
+                        <td>Third</td>
+                        <td>Fourth</td>
+                    </tr>
+                </table>
+                <br><br>
+                <table align="right" border="4" width='200'>
+                    <tr>
+                        <td>First</td>
+                        <td>Second</td>
+                    </tr>
+                    <tr>
+                        <td>Third</td>
+                        <td>Fourth</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Задает ширину таблицы. Если общая ширина содержимого превышает указанную ширину таблицы, то браузер будет пытаться «втиснуться» в заданные размеры за счет форматирования текста. В случае, когда это невозможно, например, в таблице находятся изображения, атрибут width будет проигнорирован, и новая ширина таблицы будет вычислена на основе ее содержимого.</p>
+            </td>
+        </tr>
+    </table>
+
+    <h5> 
+        <p> Также для тега доступны <a href="universal_attributes.html">Универсальные атрибуты</a> и <a href="developments.html">События</a></p> <br> 
+    </h5>
+    <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
+</body>
+
+</html>
