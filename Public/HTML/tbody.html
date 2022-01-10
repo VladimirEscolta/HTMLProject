@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;tbody&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;tbody&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Элемент &lt;tbody&gt; предназначен для хранения одной или нескольких строк таблицы. Это позволяет создавать структурные блоки, к которым можно применять единое оформление через стили, а также управлять их видом через скрипты.
+        <p>Допускается применять несколько тегов &lt;tbody&gt; внутри контейнера &lt;table&gt;. Доступны и другие виды группировок строк — &lt;tfoot&gt; и &lt;thead&gt;, ни один из них не должен перекрываться с элементом &lt;tbody&gt;.</p>
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;tbody align="left | center | right | justify"&gt;...&lt;/tbody &gt;
+            </td>
+            <td>
+                <table width="250" border="2" cellspacing="0">
+                    <tbody align="right">
+                        <tr>
+                            <td>Ячейка 1</td>
+                            <td>Ячейка 2</td> 
+                        </tr> 
+                    </tbody>
+                    <tbody align="left">
+                        <tr>
+                            <td>Ячейка 3</td>
+                            <td>Ячейка 4</td> 
+                        </tr> 
+                    </tbody>
+                </table> 
+            </td>
+            <td>
+                <p>Задает выравнивание по горизонтали содержимого строк ячеек, которые расположены внутри элемента &lt;tbody&gt;. Если требуется применить разное выравнивание для каждой ячейки, воспользуйтесь стилями или используйте атрибут align для тега &lt;td&gt; или &lt;th&gt;.</p>
+                <dl>
+                    <dt>left</dt> <dd>Выравнивание по левому краю.</dd>
+                    <dt>center</dt> <dd>Выравнивание по центру.</dd>
+                    <dt>right</dt> <dd>Выравнивание по правому краю.</dd>
+                    <dt>justify</dt> <dd>Выравнивание по ширине (одновременно по правому и левому краю).</dd>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>bgcolor</td>
+            <td>
+                 &lt;tbody bgcolor="цвет"&gt;...&lt;/tbody &gt;
+            </td>
+            <td>
+                <table width="250" border="2" cellspacing="0">
+                    <tbody bgcolor="yellow">
+                        <tr>
+                            <td>Ячейка 1</td>
+                            <td>Ячейка 2</td> 
+                        </tr> 
+                    </tbody>
+                    <tbody bgcolor="green">
+                        <tr>
+                            <td>Ячейка 3</td>
+                            <td>Ячейка 4</td> 
+                        </tr> 
+                        <tr>
+                            <td>Ячейка 5</td>
+                            <td>Ячейка 6</td> 
+                        </tr> 
+                    </tbody>
+                </table> 
+            </td>
+            <td>
+                <p>Устанавливает цвет фона ячеек, расположенных в контейнере &lt;tbody&gt;.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>char</td>
+            <td>
+                 &lt;tbody char="c" align="char"&gt;...&lt;/tbody &gt;
+            </td>
+            <td>
+                <table width="250">
+                    <tbody align="char" char=",">
+                        <tr><td>1897</td><td>67,5 млн</td></tr>
+                        <tr><td>1917</td><td>91,0 млн</td></tr>
+                        <tr><td>1926</td><td>92,7 млн</td></tr>
+                        <tr><td>1939</td><td>108,4 млн</td></tr>
+                        <tr><td>1989</td><td>147,0 млн</td></tr>
+                        <tr><td>1996</td><td>148,3 млн</td></tr>
+                        <tr><td>2002</td><td>145,6 млн</td></tr>
+                        <tr><td>2006</td><td>142,8 млн</td></tr>
+                        <tr><td>2007</td><td>142,2 млн</td></tr>
+                        <tr><td>2008</td><td>142,0 млн</td></tr>
+                        <tr><td>2009</td><td>141,9 млн</td></tr>
+                        <tr><td>2010</td><td>141,93 млн</td></tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <p>Атрибут char заставляет выравниваться содержимое ячеек внутри &lt;tbody&gt; по заданному символу. Эта возможность может пригодиться для выравнивания колонки чисел по точке или запятой. Работает только в том случае, если значение атрибута align установлено как char.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>charoff</td>
+            <td>
+                 &lt;tbody char="c" align="char" charoff="число"&gt;...&lt;/tbody &gt;
+            </td>
+            <td>
+                <table width="250">
+                    <tbody align="char" char="," charoff='3'>
+                        <tr><td>1897</td><td>67,5 млн</td></tr>
+                        <tr><td>1917</td><td>91,0 млн</td></tr>
+                        <tr><td>1926</td><td>92,7 млн</td></tr>
+                        <tr><td>1939</td><td>108,4 млн</td></tr>
+                        <tr><td>1959</td><td>117,2 млн</td></tr>
+                        <tr><td>1970</td><td>129,9 млн</td></tr>
+                        <tr><td>1979</td><td>137,4 млн</td></tr>
+                        <tr><td>2007</td><td>142,2 млн</td></tr>
+                        <tr><td>2008</td><td>142,0 млн</td></tr>
+                        <tr><td>2009</td><td>141,9 млн</td></tr>
+                        <tr><td>2010</td><td>141,93 млн</td></tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <p>Если атрибут align установлен как char, а для атрибута char в качестве значения задан символ, то с помощью атрибута charoff можно смещать содержимое ячейки влево или вправо относительно заданного символа. Так, charoff="3" означает, что браузер должен сместить содержимое ячейки на три символа вправо, а charoff="-3" — сместить на три символа влево.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>valign</td>
+            <td>
+                 &lt;tbody valign="top | middle | bottom | baseline"&gt;...&lt;/tbody &gt;
+            </td>
+            <td>
+                <table width="250" height='150' border="2" cellspacing="0">
+                    <tbody valign="top">
+                        <tr>
+                            <td>Ячейка 1</td>
+                            <td>Ячейка 2</td> 
+                        </tr> 
+                    </tbody>
+                    <tbody valign="middle">
+                        <tr>
+                            <td>Ячейка 3</td>
+                            <td>Ячейка 4</td> 
+                        </tr> 
+                    </tbody>
+                    <tbody valign="bottom">
+                        <tr>
+                            <td>Ячейка 5</td>
+                            <td>Ячейка 6</td> 
+                        </tr> 
+                    </tbody>
+                    <tbody valign="baseline">
+                        <tr>
+                            <td>Ячейка 7</td>
+                            <td>Ячейка 8</td> 
+                        </tr> 
+                    </tbody>
+                </table> 
+            </td>
+            <td>
+                <p>Устанавливает вертикальное выравнивание содержимого ячеек в контейнере &lt;tbody&gt;. По умолчанию контент ячейки располагается по ее вертикали в центре.</p>
+                <dl>
+                    <dt>top</dt> <dd>Выравнивание содержимого ячеек по верхнему краю строки.</dd>
+                    <dt>middle</dt> <dd>Выравнивание по середине.</dd>
+                    <dt>bottom</dt> <dd>Выравнивание по нижнему краю.</dd>
+                    <dt>baseline</dt> <dd>Выравнивание по базовой линии, при этом происходит привязка содержимого ячеек строки к одной линии.</dd>
+                </dl>
+            </td>
+        </tr>
+
+    </table>
+
+    <h5> 
+        <p> Также для тега доступны <a href="universal_attributes.html">Универсальные атрибуты</a> и <a href="developments.html">События</a></p> <br> 
+    </h5>
+    <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
+</body>
+
+</html>
