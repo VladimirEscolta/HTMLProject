@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;textarea&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;textarea&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Поле &lt;textarea&gt; представляет собой элемент формы для создания области, в которую можно вводить несколько строк текста. В отличие от тега &lt;input&gt; в текстовом поле допустимо делать переносы строк, они сохраняются при отправке данных на сервер. Между тегами &lt;textarea&gt; и &lt;/textarea&gt; можно поместить любой текст, который будет отображаться внутри поля.
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>accesskey</td>
+            <td>
+                &lt;textarea cols="..." rows="..." accesskey="c"&gt;...&lt;/textarea      
+            </td>
+            <td>
+                Для перехода к текстовому полю используется горячая клавиша X.
+                <p><textarea accesskey="x" cols="30" rows="5"></textarea></p>
+            </td>
+            <td>
+                <p>Атрибут accesskey позволяет перейти к текстовому полю с помощью некоторого сочетания клавиш с заданной в атрибуте буквой или цифрой. Браузеры при этом используют различные комбинации клавиш. Например, для accesskey="s" работают следующие сочетания.</p>
+                <ul>
+                    <li style="margin-bottom: 2px;">Internet Explorer: <button>Alt</button> + <button>S</button></li>
+                    <li style="margin-bottom: 2px;">Chrome: <button>Alt</button> + <button>S</button></li>
+                    <li style="margin-bottom: 2px;">Opera: <button>Shift</button> + <button>Esc</button>+ <button>S</button></li>
+                    <li style="margin-bottom: 2px;">Safari: <button>Alt</button> + <button>S</button></li>
+                    <li>Firefox: <button>Shift</button> + <button>Alt</button> + <button>S</button></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>autofocus</td>
+            <td>
+                &lt;textarea autofocus&gt;...&lt;/textarea      
+            </td>
+            <td>
+                <textarea autofocus cols="30" rows="5"></textarea>
+            </td>
+            <td>
+                <p>Автоматически устанавливает фокус в текстовое поле. В таком поле можно сразу набирать текст без переключения курсора в текстовое поле.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>cols</td>
+            <td>
+                &lt;textarea cols="число"&gt;...&lt;/textarea      
+            </td>
+            <td>
+                <textarea cols="20" rows="5">Произвольный текст.</textarea>
+            </td>
+            <td>
+                <p>Ширина текстового поля, которое определяется числом символов моноширинного шрифта. Иными словами, ширина задается количеством близстоящих букв одинаковой ширины по горизонтали. Если размер шрифта изменяется с помощью стилей, ширина также соответственно меняется.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>disabled</td>
+            <td>
+                &lt;textarea disabled&gt;...&lt;/textarea      
+            </td>
+            <td>
+                <textarea disabled cols="20" rows="5">Заблокированный текст.</textarea>
+            </td>
+            <td>
+                <p>Блокирует доступ и изменение текстового поля. Оно в таком случае отображается серым и недоступным для активации пользователем. Кроме того, такое поле не может получить фокус путем нажатия на клавишу Tab, мышью или другим способом. Тем не менее, такое состояние поля можно менять с помощью скриптов. Заблокированный в поле текст не передается на сервер.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>form</td>
+            <td>
+                &lt;textarea form="идентификатор"&gt;...&lt;/textarea      
+            </td>
+            <td>
+                <form id="text"></form>
+                <div>
+                    <p><textarea name="comment" placeholder="Комментарий" 
+                       required form="text"></textarea></p>
+                    <p><input type="submit" value="Отправить" form="text"></p>
+                </div>
+            </td>
+            <td>
+                <p>Связывает текстовое поле с формой по её идентификатору. Такая связь необходима в случае, когда поле по каким-либо причинам располагается за пределами &lt;form&gt;.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>maxlength</td>
+            <td>
+                &lt;textarea maxlength="число"&gt;...&lt;/textarea      
+            </td>
+            <td>
+                <textarea maxlength="50" cols="20" rows="5">максимальная длина 50 символов.</textarea>
+            </td>
+            <td>
+                <p>Устанавливает максимальное число символов, которое может быть введено пользователем в текстовом поле. Когда это количество достигается при наборе, дальнейший ввод становится невозможным.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>
+                &lt;textarea name="имя"&gt;...&lt;/textarea      
+            </td>
+            <td>
+                <textarea name='Random text' cols="20" rows="5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, at aliquam? Voluptas beatae tempora delectus optio molestias error porro laborum assumenda rem possimus? Odit repellat illum dolore quia, dolores ea.</textarea>
+            </td>
+            <td>
+                <p>Определяет уникальное имя элемента &lt;textarea&gt;. Как правило, это имя используется при отправке данных на сервер или для доступа к полю через скрипты.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>placeholder</td>
+            <td>
+                &lt;textarea placeholder="строка"&gt;...&lt;/textarea      
+            </td>
+            <td>
+                <textarea maxlength="100" placeholder="Введите текст длиной не более 100 символов." cols="20" rows="5"></textarea>
+            </td>
+            <td>
+                <p>Выводит текст внутри текстового поля, который исчезает при получении фокуса.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>readonly</td>
+            <td>
+                &lt;textarea readonly&gt;...&lt;/textarea      
+            </td>
+            <td>
+                <textarea cols="30" rows="7" readonly>Этот текст доступен только для чтения.</textarea>
+            </td>
+            <td>
+                <p>Когда к тегу &lt;textarea&gt; добавляется атрибут readonly, текстовое поле не может изменяться пользователем, в том числе вводиться новый текст или модифицироваться существующий. Тем не менее, состояние и содержимое поля можно менять с помощью скриптов.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>required</td>
+            <td>
+                &lt;textarea required&gt;...&lt;/textarea      
+            </td>
+            <td>
+                <textarea cols="30" rows="7" required placeholder="Это поле обязательно для заполнения"></textarea>
+                <input type="submit" value="Отправить">
+            </td>
+            <td>
+                <p>Устанавливает текстовое поле обязательным для заполнения перед отправкой формы на сервер. Если в обязательном поле нет текста, браузер выведет сообщение, а форма отправлена не будет. Вид и содержание сообщения зависит от браузера и меняться пользователем не может.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>rows</td>
+            <td>
+                &lt;textarea rows="число"&gt;...&lt;/textarea      
+            </td>
+            <td>
+                <textarea cols="25" rows="10" readonly>Задана высота текстового поля.</textarea>
+            </td>
+            <td>
+                <p>Высота текстового поля, которое определяется количеством отображаемых строк без прокрутки содержимого. Если размер шрифта изменяется с помощью стилей, высота поля также соответственно меняется.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>tabindex</td>
+            <td>
+                &lt;textarea tabindex="число"&gt;...&lt;/textarea      
+            </td>
+            <td>
+                <textarea cols="25" rows="3" tabindex="1">Первый по списку</textarea>
+                <textarea cols="25" rows="3" tabindex="4">Четвертый по списку</textarea>
+                <textarea cols="25" rows="3" tabindex="3">Третий по списку</textarea>
+                <textarea cols="25" rows="3" tabindex="2">Второй по списку</textarea>
+            </td>
+            <td>
+                <p>Атрибут tabindex определяет последовательность перехода между элементами при нажатии на кнопку <button>Tab</button>.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>wrap</td>
+            <td>
+                &lt;textarea wrap="soft | hard"&gt;...&lt;/textarea      
+            </td>
+            <td>
+                <form action="handler.php" method="post">
+                    <p><textarea rows="10" cols="20" wrap="hard"></textarea></p>
+                    <p><input type="submit" value="Отправить"></p>
+                </form>
+            </td>
+            <td>
+                <p>Атрибут wrap говорит браузеру, как осуществлять перенос текста в поле &lt;textarea&gt; и в каком виде отправлять данные на сервер. Если этот атрибут отсутствует, текст в поле набирается одной строкой, когда число введенных символов превышает ширину области, появляется горизонтальная полоса прокрутки. Нажатие кнопки <button>Enter</button> переносит текст на новую строку, и курсор устанавливается у левого края поля.</p>
+                <dl>
+                    <dt>soft</dt> <dd>Длинный текст, который самостоятельно не помещается в поле по ширине, будет автоматически перенесен на новую строку, однако передаваться на сервер будет как одна строка. Нажатие клавиши <button>Enter</button> устанавливает перенос текста, который сохраняется при отправке формы.</dd>
+                    <dt>hard</dt> <dd>Слова в поле переносятся механически, чтобы они поместились в размер области, и при отправке на сервер места автоматического переноса сохраняются. При этом значении обязательно должен присутствовать атрибут cols.</dd>
+                    <dt>off</dt> <dd>Нестандартное значение. Переносы строк отключены. При введении длинного текста без переносов, он будет печататься в одну строку, при этом будет отображаться полоса прокрутки.</dd>
+                </dl>
+            </td>
+        </tr>
+    </table>
+
+    <h5> 
+        <p> Также для тега доступны <a href="universal_attributes.html">Универсальные атрибуты</a> и <a href="developments.html">События</a></p> <br> 
+    </h5>
+    <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
+</body>
+
+</html>
