@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;td&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;td&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Предназначен для создания одной ячейки таблицы. Тег &lt;td&gt; должен размещаться внутри контейнера &lt;tr&gt;, который в свою очередь располагается внутри тега &lt;table&gt;.
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>abbr</td>
+            <td>
+                &lt;td abbr="текст"&gt;...&lt;/td &gt;
+            </td>
+            <td>
+                <table border="2" width='100' height='75'>
+                    <tr>
+                        <td abbr='Первая ячейка'>First</td>
+                        <td>Second</td>
+                    </tr>
+                    <tr>
+                        <td>Third</td>
+                        <td>Fourth</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Атрибут abbr предназначен для краткого описания содержимого ячеек. Текст внутри abbr браузерами не отображается и предназначен в первую очередь для доступа людей к содержанию с помощью вспомогательных технологий вроде речевых браузеров. Значение представляет сокращенную версию текста внутри тега &lt;td&gt;. Хотя abbr никак не выводится, браузеры распознают этот атрибут и могут получить к нему доступ через скрипты.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td align="left | center | right | justify | char"&gt;...&lt;/td &gt;
+            </td>
+            <td>
+                <table border="2" width='200' height='100'>
+                    <tr>
+                        <td align="left">First</td>
+                        <td align="center">Second</td>
+                    </tr>
+                    <tr>
+                        <td align="right">Third</td>
+                        <td align="justify">Fourth</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Задает выравнивание содержимого ячейки по горизонтали.</p>
+                <dl>
+                    <dt>left</dt><dd>Выравнивание содержимого ячейки по левому краю.</dd>
+                    <dt>center</dt><dd>Выравнивание по центру.</dd>
+                    <dt>right</dt><dd>Выравнивание по правому краю.</dd>
+                    <dt>justify</dt><dd>Выравнивание по ширине (одновременно по правому и левому краю).</dd>
+                    <dt>char</dt><dd>Выравнивает по указанному символу.</dd>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>axis</td>
+            <td>
+                &lt;td axis="текст"&gt;...&lt;/td &gt;
+            </td>
+            <td>
+                <table border="2" width='200' height='100'>
+                    <tr>
+                        <td axis="Проверка">First</td>
+                        <td>Second</td>
+                    </tr>
+                    <tr>
+                        <td>Third</td>
+                        <td>Fourth</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Позволяет группировать колонки или строки связанные между собой близкой информацией. В настоящее время браузеры не поддерживают атрибут axis, поэтому вопрос о том, как в действительности атрибут влияет на вид таблицы остается открытым.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td background="URL"&gt;...&lt;/td &gt;
+            </td>
+            <td>
+                <table border="2" width='300' height='200'>
+                    <tr>
+                        <td background='../../Images/vector.jpg'>First</td>
+                        <td>Second</td>
+                    </tr>
+                    <tr>
+                        <td>Third</td>
+                        <td>Fourth</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Определяет изображение, которое будет использоваться в качестве фонового рисунка ячейки таблицы. В отличие от обычных изображений, для фона не устанавливаются ширина и высота, и он всегда отображается в натуральную величину с масштабом 100%. Если рисунок по размеру меньше ширины или высоты ячейки, то картинка повторяется по горизонтали вправо и вниз, выстраиваясь, как мозаика. По этой причине на месте стыка фоновых картинок могут возникнуть видимые перепады, заметные для посетителей сайта. При выборе фонового рисунка убедитесь, что обеспечен достаточный контраст между ним и содержимым ячейки. В качестве фона допускается использовать анимированные изображения в формате GIF, но они отвлекают внимание читателей.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>bgcolor</td>
+            <td>
+                &lt;td bgcolor="цвет"&gt;...&lt;/td &gt;
+            </td>
+            <td>
+                <table border="2" width='200' height='150'>
+                    <tr>
+                        <td bgcolor="yellow">First</td>
+                        <td bgcolor="green">Second</td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="blue">Third</td>
+                        <td bgcolor="red">Fourth</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Устанавливает цвет фона ячейки.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>bordercolor</td>
+            <td>
+                &lt;td bordercolor="цвет"&gt;...&lt;/td &gt;
+            </td>
+            <td>
+                <table border="2" width='200' height='150'>
+                    <tr>
+                        <td bordercolor="yellow">First</td>
+                        <td bordercolor="green">Second</td>
+                    </tr>
+                    <tr>
+                        <td bordercolor="blue">Third</td>
+                        <td bordercolor="red">Fourth</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Устанавливает цвет рамки вокруг ячейки. Рамка показывается, когда установлен атрибут border с ненулевым значением у тега &lt;table&gt;.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>char</td>
+            <td>
+                &lt;td align="char" char="c"&gt;...&lt;/td &gt;
+            </td>
+            <td>
+                <table cellspacing="0" cellpadding="4" border="1" width="100%">
+                    <tr>
+                        <td>Срок размещения</td>
+                        <td>Ставка</td>
+                    </tr>
+                    <tr>
+                        <td>6 месяцев</td>
+                        <td char="%" align="char">9,00%</td>
+                    </tr>
+                    <tr>
+                        <td>1 год</td>
+                        <td char="%" align="char">5,00%</td>
+                    </tr>
+                    <tr>
+                        <td>2 года</td>
+                        <td char="%" align="char">4,50%</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Атрибут char позволяет выравнить содержимое ячейки по заданному символу. Работает только в том случае, если значение атрибута align установлено как char.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>charoff</td>
+            <td>
+                &lt;td charoff="число"&gt;...&lt;/td &gt;
+            </td>
+            <td>
+                <table cellspacing="0" cellpadding="4" border="1" width="100%">
+                    <tr>
+                        <td>Срок размещения</td>
+                        <td>Ставка</td>
+                    </tr>
+                    <tr>
+                        <td>6 месяцев</td>
+                        <td char="%" charoff='3' align="char">9,00%</td>
+                    </tr>
+                    <tr>
+                        <td>1 год</td>
+                        <td char="%" charoff='3' align="char">5,00%</td>
+                    </tr>
+                    <tr>
+                        <td>2 года</td>
+                        <td char="%" charoff='3' align="char">4,50%</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Если атрибут align установлен как char, а для атрибута char в качестве значения задан символ, то с помощью атрибута charoff можно смещать содержимое ячейки влево или вправо относительно заданного символа. Так, charoff="3" означает, что браузер должен сместить содержимое ячейки на три символа вправо, а charoff="-3" — сместить на три символа влево.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>colspan</td>
+            <td>
+                &lt;td colspan="число"&gt;...&lt;/td &gt;
+            </td>
+            <td>
+                <table border="2" width='200' height='100'>
+                    <tr>
+                        <td colspan="2" bgcolor="green" align="center">First</td>
+                    </tr>
+                    <tr>
+                        <td align="center">Second</td>
+                        <td align="center">Third</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Устанавливает число ячеек, которые должны быть объединены по горизонтали. Этот атрибут имеет смысл для таблиц, состоящих из нескольких строк.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>headers</td>
+            <td>
+                &lt;td id="идентификатор"&gt;...&lt;/td &gt; <br>
+                &lt;td headers="идентификатор"&gt;...&lt;/td &gt;
+            </td>
+            <td>
+                <table cellspacing="0" cellpadding="4" border="1">
+                    <tr>
+                        <td id="name">Имя</td>
+                        <td id="surname">Фамилия</td>
+                        <td id="tel">Телефон</td>
+                        <td id="address">Адрес</td>
+                        <td id="num">Номер комнаты</td>
+                    </tr>
+                    <tr>
+                        <td headers="name">Иван</td>
+                        <td headers="surname">Пырьев</td>
+                        <td headers="tel">555-94-32-95</td>
+                        <td headers="address">Улица Ассинизаторов, 69</td>
+                        <td headers="num">908Б</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Позволяет связать ячейки таблицы с заголовками. Этот атрибут предназначен для повышения доступности таблицы пользователям речевых браузеров, в обычных браузерах результат применения атрибута headers не заметен. Для связывания ячеек между собой одной ячейке в теге &lt;td&gt; или &lt;th&gt; задается атрибут id, а второй ячейке — атрибут headers со значением, совпадающим со значением id.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>height</td>
+            <td>
+                &lt;td height="значение"&gt;...&lt;/td &gt;
+            </td>
+            <td>
+                <table border="2">
+                    <tr>
+                        <td height='30' align="center">First</td>
+                        <td align="center">Second</td>
+                    </tr>
+                    <tr>
+                        <td height='50' align="center">Third</td>
+                        <td align="center">Fourth</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Браузер сам устанавливает высоту таблицы и ее ячеек исходя из их содержимого. Однако при использовании атрибута height высота ячеек будет изменена. Здесь возможны два варианта. Если значение height меньше, чем содержимое ячейки, то этот атрибут будет проигнорирован. В случае, когда установлена высота ячейки, превышающая ее содержимое, добавляется пустое пространство по вертикали.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>nowrap</td>
+            <td>
+                &lt;td nowrap&gt;...&lt;/td &gt;
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td width="300" nowrap>Duis te feugifacilisi. Duis autem dolor in hendrerit in vulputate 
+                            velit esse molestie consequat, vel illum dolore eu feugiat nulla 
+                            facilisis at vero eros et accumsan et iusto odio dignissim qui blandit 
+                            praesent luptatum zzril delenit au gue duis dolore te feugat nulla 
+                            facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci taion 
+                            ullamcorper suscipit lobortis nisl ut aliquip ex en commodo consequat. 
+                            Duis te feugifacilisi per suscipit lobortis nisl ut aliquip ex en 
+                            commodo consequat.
+                        </td>
+                    </tr> 
+                </table> 
+            </td>
+            <td>
+                <p>Добавление атрибута nowrap к тегу &lt;td&gt; заставляет текст внутри ячейки отображаться без переносов, одной сплошной строкой. Неправильное использование этого атрибута может привести к тому, что таблица будет слишком широкой и не поместится целиком на веб-страницу. Как следствие, появится горизонтальная полоса прокрутки. В любом случае, пользоваться подобной таблицей будет неудобно, из-за чего применение атрибута nowrap осуждается.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>rowspan</td>
+            <td>
+                &lt;td rowspan="число"&gt;...&lt;/td &gt;
+            </td>
+            <td>
+                <table border="2" width='200' height='100'>
+                    <tr>
+                        <td rowspan="2" bgcolor="green" align="center">First</td>
+                        <td align="center">Second</td>
+                    </tr>
+                    <tr>
+                        <td align="center">Third</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Устанавливает число ячеек, которые должны быть объединены по вертикали. Этот атрибут имеет смысл для таблиц, состоящих из нескольких строк.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>scope</td>
+            <td>
+                &lt;td scope="col | colgroup | row | rowgroup"&gt;...&lt;/td &gt;
+            </td>
+            <td>
+                <table border="1" width="300">
+                    <tr>
+                        <th></th>
+                        <th scope="col">Месяц</th>
+                        <th scope="col">Заработано</th>
+                    </tr>
+                    <tr>
+                        <td scope="row">1</td>
+                        <td>Январь</td>
+                        <td>152</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">2</td>
+                        <td>Февраль</td>
+                        <td>176</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">3</td>
+                        <td>Март</td>
+                        <td>244</td>
+                    </tr>
+                </table> 
+            </td>
+            <td>
+                <p>Атрибут scope связывает между собой ячейки с заголовком и обычные ячейки. По своему действию напоминает атрибут headers, но используется для простых таблиц. Атрибут предназначен для экранных ридеров вроде речевых браузеров, в обычных браузерах результат добавления scope никак не заметен.</p>
+                <dl>
+                    <dt>col</dt> <dd>Ячейка заголовка установлена для колонки.</dd>
+                    <dt>colgroup</dt> <dd>Ячейка заголовка установлена для группы колонок.</dd>
+                    <dt>row</dt> <dd>Ячейка заголовка задана для строки.</dd>
+                    <dt>rowgroup</dt> <dd>Ячейка заголовка установлена для группы строк.</dd>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>valign</td>
+            <td>
+                &lt;td valign="top | middle | bottom | baseline"&gt;...&lt;/td &gt;
+            </td>
+            <td>
+                <table border="2" width='200' height='150'>
+                    <tr>
+                        <td valign='top'>First</td>
+                        <td valign='middle'>Second</td>
+                    </tr>
+                    <tr>
+                        <td valign='bottom'>Third</td>
+                        <td valign='baseline'>Fourth</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Устанавливает вертикальное выравнивание содержимого ячейки. По умолчанию контент ячейки располагается по ее вертикали в центре.</p>
+                <dl>
+                    <dt>top</dt> <dd>Выравнивание содержимого ячеек по верхнему краю строки.</dd>
+                    <dt>middle</dt> <dd>Выравнивание по середине.</dd>
+                    <dt>bottom</dt> <dd>Выравнивание по нижнему краю.</dd>
+                    <dt>baseline</dt> <dd>Выравнивание по базовой линии, при этом происходит привязка содержимого ячеек строки к одной линии.</dd>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td>
+                &lt;td width="значение"&gt;...&lt;/td &gt;
+            </td>
+            <td>
+                <table border="2" height='100'>
+                    <tr>
+                        <td width='75'>First</td>
+                        <td width='150'>Second</td>
+                    </tr>
+                    <tr>
+                        <td >Third</td>
+                        <td >Fourth</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Задает ширину ячейки. Если общая ширина содержимого превышает указанную ширину ячейки, то браузер будет пытаться «втиснуться» в заданные размеры за счет форматирования текста. В случае, когда это невозможно, например, в ячейке находятся изображения, атрибут width будет проигнорирован, и новая ширина ячейки будет вычислена на основе ее содержимого.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;td &gt;...&lt;/td &gt;
+            </td>
+            <td>
+         
+            </td>
+            <td>
+
+            </td>
+        </tr>
+
+    </table>
+
+    <h5> 
+        <p> Также для тега доступны <a href="universal_attributes.html">Универсальные атрибуты</a> и <a href="developments.html">События</a></p> <br> 
+    </h5>
+    <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
+</body>
+
+</html>
