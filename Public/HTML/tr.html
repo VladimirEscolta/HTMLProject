@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;tr&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;tr&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Тег &lt;tr&gt; служит контейнером для создания строки таблицы. Каждая ячейка в пределах такой строки может задаваться с помощью тега &lt;th&gt; или &lt;td&gt;.
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>align</td>
+            <td>
+                &lt;tr align="left | center | right | justify | char"&gt;...&lt;/tr &gt;
+            </td>
+            <td>
+                <table border="2" width='200' height='100'>
+                    <tr align="center">
+                        <td>First</td>
+                        <td>Second</td>
+                    </tr>
+                    <tr align="right">
+                        <td>Third</td>
+                        <td>Fourth</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Задает выравнивание содержимого ячейки по горизонтали.</p>
+                <dl>
+                    <dt>left</dt><dd>Выравнивание содержимого ячейки по левому краю.</dd>
+                    <dt>center</dt><dd>Выравнивание по центру.</dd>
+                    <dt>right</dt><dd>Выравнивание по правому краю.</dd>
+                    <dt>justify</dt><dd>Выравнивание по ширине (одновременно по правому и левому краю).</dd>
+                    <dt>char</dt><dd>Выравнивает по указанному символу.</dd>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>bgcolor</td>
+            <td>
+                &lt;tr bgcolor="цвет"&gt;...&lt;/tr &gt;
+            </td>
+            <td>
+                <table border="2" width='200' height='150'>
+                    <tr bgcolor="yellow">
+                        <td>First</td>
+                        <td>Second</td>
+                    </tr>
+                    <tr bgcolor="green">
+                        <td>Third</td>
+                        <td>Fourth</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Устанавливает цвет фона строки таблицы.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>bordercolor</td>
+            <td>
+                &lt;tr bordercolor="цвет"&gt;...&lt;/tr &gt;
+            </td>
+            <td>
+                <table border="2" width='200' height='150'>
+                    <tr bordercolor="yellow">
+                        <td>First</td>
+                        <td>Second</td>
+                    </tr>
+                    <tr bordercolor="red">
+                        <td>Third</td>
+                        <td>Fourth</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Устанавливает цвет рамки вокруг строки. Рамка показывается, когда установлен атрибут border с ненулевым значением у тега &lt;table&gt;.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>char</td>
+            <td>
+                &lt;tr align="char" char="c"&gt;...&lt;/tr &gt;
+            </td>
+            <td>
+                <table cellspacing="0" cellpadding="4" border="1" width="100%">
+                    <tr>
+                        <td>Срок размещения</td>
+                        <td>Ставка</td>
+                    </tr>
+                    <tr char="%" align="char">
+                        <td>6 месяцев</td>
+                        <td>9,00%</td>
+                    </tr>
+                    <tr char="%" align="char">
+                        <td>1 год</td>
+                        <td>5,00%</td>
+                    </tr>
+                    <tr char="%" align="char">
+                        <td>2 года</td>
+                        <td>4,50%</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Атрибут char позволяет выравнить содержимое ячейки по заданному символу. Работает только в том случае, если значение атрибута align установлено как char.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>charoff</td>
+            <td>
+                &lt;tr charoff="число"&gt;...&lt;/tr &gt;
+            </td>
+            <td>
+                <table cellspacing="0" cellpadding="4" border="1" width="100%">
+                    <tr>
+                        <td>Срок размещения</td>
+                        <td>Ставка</td>
+                    </tr>
+                    <tr char="%" charoff='3' align="char">
+                        <td>6 месяцев</td>
+                        <td>9,00%</td>
+                    </tr>
+                    <tr char="%" charoff='3' align="char">
+                        <td>1 год</td>
+                        <td>5,00%</td>
+                    </tr>
+                    <tr char="%" charoff='3' align="char">
+                        <td>2 года</td>
+                        <td>4,50%</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Если атрибут align установлен как char, а для атрибута char в качестве значения задан символ, то с помощью атрибута charoff можно смещать содержимое ячейки влево или вправо относительно заданного символа. Так, charoff="3" означает, что браузер должен сместить содержимое ячейки на три символа вправо, а charoff="-3" — сместить на три символа влево.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>valign</td>
+            <td>
+                &lt;tr valign="top | middle | bottom | baseline"&gt;...&lt;/tr &gt;
+            </td>
+            <td>
+                <table border="2" width='200' height='150'>
+                    <tr valign='top'>
+                        <td>First</td>
+                        <td>Second</td>
+                    </tr>
+                    <tr valign='bottom'>
+                        <td>Third</td>
+                        <td>Fourth</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Устанавливает вертикальное выравнивание содержимого ячеек в строке. По умолчанию контент ячейки располагается по ее вертикали в центре.</p>
+                <dl>
+                    <dt>top</dt> <dd>Выравнивание содержимого ячеек по верхнему краю строки.</dd>
+                    <dt>middle</dt> <dd>Выравнивание по середине.</dd>
+                    <dt>bottom</dt> <dd>Выравнивание по нижнему краю.</dd>
+                    <dt>baseline</dt> <dd>Выравнивание по базовой линии, при этом происходит привязка содержимого ячеек строки к одной линии.</dd>
+                </dl>
+            </td>
+        </tr>
+    </table>
+
+    <h5> 
+        <p> Также для тега доступны <a href="universal_attributes.html">Универсальные атрибуты</a> и <a href="developments.html">События</a></p> <br> 
+    </h5>
+    <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
+</body>
+
+</html>
