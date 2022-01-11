@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тег &lt;td&gt;</title>
+    <title>Тег &lt;th&gt;</title>
     <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
     <link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon">
     <style>
@@ -16,10 +16,10 @@
     </style>
 </head>
 <body>
-    <h1>Тег &lt;td&gt;</h1>
+    <h1>Тег &lt;th&gt;</h1>
     <h3>Описание</h3>
     <p>
-        Предназначен для создания одной ячейки таблицы. Тег &lt;td&gt; должен размещаться внутри контейнера &lt;tr&gt;, который в свою очередь располагается внутри тега &lt;table&gt;.
+        Тег &lt;th&gt; предназначен для создания одной ячейки таблицы, которая обозначается как заголовочная. Текст в такой ячейке отображается браузером обычно жирным шрифтом и выравнивается по центру. Тег &lt;th&gt; должен размещаться внутри контейнера &lt;tr&gt;, который в свою очередь располагается внутри тега &lt;table&gt;.
     </p>
     <h3>Атрибуты</h3>
     <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
@@ -29,38 +29,38 @@
         <tr>
             <td>abbr</td>
             <td>
-                &lt;td abbr="текст"&gt;...&lt;/td &gt;
+                &lt;th abbr="текст"&gt;...&lt;/th &gt;
             </td>
             <td>
                 <table border="2" width='100' height='75'>
                     <tr>
-                        <td abbr='Первая ячейка'>First</td>
-                        <td>Second</td>
+                        <th abbr='Первая ячейка'>First</th>
+                        <th>Second</th>
                     </tr>
                     <tr>
-                        <td>Third</td>
-                        <td>Fourth</td>
+                        <th>Third</th>
+                        <th>Fourth</th>
                     </tr>
                 </table>
             </td>
             <td>
-                <p>Атрибут abbr предназначен для краткого описания содержимого ячеек. Текст внутри abbr браузерами не отображается и предназначен в первую очередь для доступа людей к содержанию с помощью вспомогательных технологий вроде речевых браузеров. Значение представляет сокращенную версию текста внутри тега &lt;td&gt;. Хотя abbr никак не выводится, браузеры распознают этот атрибут и могут получить к нему доступ через скрипты.</p>
+                <p>Атрибут abbr предназначен для краткого описания содержимого ячеек. Текст внутри abbr браузерами не отображается и предназначен в первую очередь для доступа людей к содержанию с помощью вспомогательных технологий вроде речевых браузеров. Значение представляет сокращенную версию текста внутри тега &lt;th&gt;. Хотя abbr никак не выводится, браузеры распознают этот атрибут и могут получить к нему доступ через скрипты.</p>
             </td>
         </tr>
         <tr>
             <td>align</td>
             <td>
-                &lt;td align="left | center | right | justify | char"&gt;...&lt;/td &gt;
+                &lt;th align="left | center | right | justify | char"&gt;...&lt;/th &gt;
             </td>
             <td>
                 <table border="2" width='200' height='100'>
                     <tr>
-                        <td align="left">First</td>
-                        <td align="center">Second</td>
+                        <th align="left">First</th>
+                        <th align="center">Second</th>
                     </tr>
                     <tr>
-                        <td align="right">Third</td>
-                        <td align="justify">Fourth</td>
+                        <th align="right">Third</th>
+                        <th align="justify">Fourth</th>
                     </tr>
                 </table>
             </td>
@@ -78,17 +78,17 @@
         <tr>
             <td>axis</td>
             <td>
-                &lt;td axis="текст"&gt;...&lt;/td &gt;
+                &lt;th axis="текст"&gt;...&lt;/th &gt;
             </td>
             <td>
                 <table border="2" width='200' height='100'>
                     <tr>
-                        <td axis="Проверка">First</td>
-                        <td>Second</td>
+                        <th axis="Проверка">First</th>
+                        <th>Second</th>
                     </tr>
                     <tr>
-                        <td>Third</td>
-                        <td>Fourth</td>
+                        <th>Third</th>
+                        <th>Fourth</th>
                     </tr>
                 </table>
             </td>
@@ -99,17 +99,17 @@
         <tr>
             <td>background</td>
             <td>
-                &lt;td background="URL"&gt;...&lt;/td &gt;
+                &lt;th background="URL"&gt;...&lt;/th &gt;
             </td>
             <td>
                 <table border="2" width='300' height='200'>
                     <tr>
-                        <td background='../../Images/vector.jpg'>First</td>
-                        <td>Second</td>
+                        <th background='../../Images/vector.jpg'>First</th>
+                        <th>Second</th>
                     </tr>
                     <tr>
-                        <td>Third</td>
-                        <td>Fourth</td>
+                        <th>Third</th>
+                        <th>Fourth</th>
                     </tr>
                 </table>
             </td>
@@ -120,17 +120,17 @@
         <tr>
             <td>bgcolor</td>
             <td>
-                &lt;td bgcolor="цвет"&gt;...&lt;/td &gt;
+                &lt;th bgcolor="цвет"&gt;...&lt;/th &gt;
             </td>
             <td>
                 <table border="2" width='200' height='150'>
                     <tr>
-                        <td bgcolor="yellow">First</td>
-                        <td bgcolor="green">Second</td>
+                        <th bgcolor="yellow">First</th>
+                        <th bgcolor="green">Second</th>
                     </tr>
                     <tr>
-                        <td bgcolor="blue">Third</td>
-                        <td bgcolor="red">Fourth</td>
+                        <th bgcolor="blue">Third</th>
+                        <th bgcolor="red">Fourth</th>
                     </tr>
                 </table>
             </td>
@@ -141,17 +141,17 @@
         <tr>
             <td>bordercolor</td>
             <td>
-                &lt;td bordercolor="цвет"&gt;...&lt;/td &gt;
+                &lt;th bordercolor="цвет"&gt;...&lt;/th &gt;
             </td>
             <td>
                 <table border="2" width='200' height='150'>
                     <tr>
-                        <td bordercolor="yellow">First</td>
-                        <td bordercolor="green">Second</td>
+                        <th bordercolor="yellow">First</th>
+                        <th bordercolor="green">Second</th>
                     </tr>
                     <tr>
-                        <td bordercolor="blue">Third</td>
-                        <td bordercolor="red">Fourth</td>
+                        <th bordercolor="blue">Third</th>
+                        <th bordercolor="red">Fourth</th>
                     </tr>
                 </table>
             </td>
@@ -162,25 +162,25 @@
         <tr>
             <td>char</td>
             <td>
-                &lt;td align="char" char="c"&gt;...&lt;/td &gt;
+                &lt;th align="char" char="c"&gt;...&lt;/th &gt;
             </td>
             <td>
                 <table cellspacing="0" cellpadding="4" border="1" width="100%">
                     <tr>
-                        <td>Срок размещения</td>
-                        <td>Ставка</td>
+                        <th>Срок размещения</th>
+                        <th>Ставка</th>
                     </tr>
                     <tr>
-                        <td>6 месяцев</td>
-                        <td char="%" align="char">9,00%</td>
+                        <th>6 месяцев</th>
+                        <th char="%" align="char">9,00%</th>
                     </tr>
                     <tr>
-                        <td>1 год</td>
-                        <td char="%" align="char">5,00%</td>
+                        <th>1 год</th>
+                        <th char="%" align="char">5,00%</th>
                     </tr>
                     <tr>
-                        <td>2 года</td>
-                        <td char="%" align="char">4,50%</td>
+                        <th>2 года</th>
+                        <th char="%" align="char">4,50%</th>
                     </tr>
                 </table>
             </td>
@@ -191,25 +191,25 @@
         <tr>
             <td>charoff</td>
             <td>
-                &lt;td charoff="число"&gt;...&lt;/td &gt;
+                &lt;th charoff="число"&gt;...&lt;/th &gt;
             </td>
             <td>
                 <table cellspacing="0" cellpadding="4" border="1" width="100%">
                     <tr>
-                        <td>Срок размещения</td>
-                        <td>Ставка</td>
+                        <th>Срок размещения</th>
+                        <th>Ставка</th>
                     </tr>
                     <tr>
-                        <td>6 месяцев</td>
-                        <td char="%" charoff='3' align="char">9,00%</td>
+                        <th>6 месяцев</th>
+                        <th char="%" charoff='3' align="char">9,00%</th>
                     </tr>
                     <tr>
-                        <td>1 год</td>
-                        <td char="%" charoff='3' align="char">5,00%</td>
+                        <th>1 год</th>
+                        <th char="%" charoff='3' align="char">5,00%</th>
                     </tr>
                     <tr>
-                        <td>2 года</td>
-                        <td char="%" charoff='3' align="char">4,50%</td>
+                        <th>2 года</th>
+                        <th char="%" charoff='3' align="char">4,50%</th>
                     </tr>
                 </table>
             </td>
@@ -220,16 +220,16 @@
         <tr>
             <td>colspan</td>
             <td>
-                &lt;td colspan="число"&gt;...&lt;/td &gt;
+                &lt;th colspan="число"&gt;...&lt;/th &gt;
             </td>
             <td>
                 <table border="2" width='200' height='100'>
                     <tr>
-                        <td colspan="2" bgcolor="green" align="center">First</td>
+                        <th colspan="2" bgcolor="green" align="center">First</th>
                     </tr>
                     <tr>
-                        <td align="center">Second</td>
-                        <td align="center">Third</td>
+                        <th align="center">Second</th>
+                        <th align="center">Third</th>
                     </tr>
                 </table>
             </td>
@@ -240,45 +240,45 @@
         <tr>
             <td>headers</td>
             <td>
-                &lt;td id="идентификатор"&gt;...&lt;/td &gt; <br>
-                &lt;td headers="идентификатор"&gt;...&lt;/td &gt;
+                &lt;th id="идентификатор"&gt;...&lt;/th &gt; <br>
+                &lt;th headers="идентификатор"&gt;...&lt;/th &gt;
             </td>
             <td>
                 <table cellspacing="0" cellpadding="4" border="1">
                     <tr>
-                        <td id="name">Имя</td>
-                        <td id="surname">Фамилия</td>
-                        <td id="tel">Телефон</td>
-                        <td id="address">Адрес</td>
-                        <td id="num">Номер комнаты</td>
+                        <th id="name">Имя</th>
+                        <th id="surname">Фамилия</th>
+                        <th id="tel">Телефон</th>
+                        <th id="address">Адрес</th>
+                        <th id="num">Номер комнаты</th>
                     </tr>
                     <tr>
-                        <td headers="name">Иван</td>
-                        <td headers="surname">Пырьев</td>
-                        <td headers="tel">555-94-32-95</td>
-                        <td headers="address">Улица Ассинизаторов, 69</td>
-                        <td headers="num">908Б</td>
+                        <th headers="name">Иван</th>
+                        <th headers="surname">Пырьев</th>
+                        <th headers="tel">555-94-32-95</th>
+                        <th headers="address">Улица Ассинизаторов, 69</th>
+                        <th headers="num">908Б</th>
                     </tr>
                 </table>
             </td>
             <td>
-                <p>Позволяет связать ячейки таблицы с заголовками. Этот атрибут предназначен для повышения доступности таблицы пользователям речевых браузеров, в обычных браузерах результат применения атрибута headers не заметен. Для связывания ячеек между собой одной ячейке в теге &lt;td&gt; или &lt;th&gt; задается атрибут id, а второй ячейке — атрибут headers со значением, совпадающим со значением id.</p>
+                <p>Позволяет связать ячейки таблицы с заголовками. Этот атрибут предназначен для повышения доступности таблицы пользователям речевых браузеров, в обычных браузерах результат применения атрибута headers не заметен. Для связывания ячеек между собой одной ячейке в теге &lt;th&gt; задается атрибут id, а второй ячейке — атрибут headers со значением, совпадающим со значением id.</p>
             </td>
         </tr>
         <tr>
             <td>height</td>
             <td>
-                &lt;td height="значение"&gt;...&lt;/td &gt;
+                &lt;th height="значение"&gt;...&lt;/th &gt;
             </td>
             <td>
                 <table border="2">
                     <tr>
-                        <td height='30' align="center">First</td>
-                        <td align="center">Second</td>
+                        <th height='30' align="center">First</th>
+                        <th align="center">Second</th>
                     </tr>
                     <tr>
-                        <td height='50' align="center">Third</td>
-                        <td align="center">Fourth</td>
+                        <th height='50' align="center">Third</th>
+                        <th align="center">Fourth</th>
                     </tr>
                 </table>
             </td>
@@ -289,12 +289,12 @@
         <tr>
             <td>nowrap</td>
             <td>
-                &lt;td nowrap&gt;...&lt;/td &gt;
+                &lt;th nowrap&gt;...&lt;/th &gt;
             </td>
             <td>
                 <table>
                     <tr>
-                        <td width="300" nowrap>Duis te feugifacilisi. Duis autem dolor in hendrerit in vulputate 
+                        <th width="300" nowrap>Duis te feugifacilisi. Duis autem dolor in hendrerit in vulputate 
                             velit esse molestie consequat, vel illum dolore eu feugiat nulla 
                             facilisis at vero eros et accumsan et iusto odio dignissim qui blandit 
                             praesent luptatum zzril delenit au gue duis dolore te feugat nulla 
@@ -302,27 +302,27 @@
                             ullamcorper suscipit lobortis nisl ut aliquip ex en commodo consequat. 
                             Duis te feugifacilisi per suscipit lobortis nisl ut aliquip ex en 
                             commodo consequat.
-                        </td>
+                        </th>
                     </tr> 
                 </table> 
             </td>
             <td>
-                <p>Добавление атрибута nowrap к тегу &lt;td&gt; заставляет текст внутри ячейки отображаться без переносов, одной сплошной строкой. Неправильное использование этого атрибута может привести к тому, что таблица будет слишком широкой и не поместится целиком на веб-страницу. Как следствие, появится горизонтальная полоса прокрутки. В любом случае, пользоваться подобной таблицей будет неудобно, из-за чего применение атрибута nowrap осуждается.</p>
+                <p>Добавление атрибута nowrap к тегу &lt;th&gt; заставляет текст внутри ячейки отображаться без переносов, одной сплошной строкой. Неправильное использование этого атрибута может привести к тому, что таблица будет слишком широкой и не поместится целиком на веб-страницу. Как следствие, появится горизонтальная полоса прокрутки. В любом случае, пользоваться подобной таблицей будет неудобно, из-за чего применение атрибута nowrap осуждается.</p>
             </td>
         </tr>
         <tr>
             <td>rowspan</td>
             <td>
-                &lt;td rowspan="число"&gt;...&lt;/td &gt;
+                &lt;th rowspan="число"&gt;...&lt;/th &gt;
             </td>
             <td>
                 <table border="2" width='200' height='100'>
                     <tr>
-                        <td rowspan="2" bgcolor="green" align="center">First</td>
-                        <td align="center">Second</td>
+                        <th rowspan="2" bgcolor="green" align="center">First</th>
+                        <th align="center">Second</th>
                     </tr>
                     <tr>
-                        <td align="center">Third</td>
+                        <th align="center">Third</th>
                     </tr>
                 </table>
             </td>
@@ -333,7 +333,7 @@
         <tr>
             <td>scope</td>
             <td>
-                &lt;td scope="col | colgroup | row | rowgroup"&gt;...&lt;/td &gt;
+                &lt;th scope="col | colgroup | row | rowgroup"&gt;...&lt;/th &gt;
             </td>
             <td>
                 <table border="1" width="300">
@@ -343,19 +343,19 @@
                         <th scope="col">Заработано</th>
                     </tr>
                     <tr>
-                        <td scope="row">1</td>
-                        <td>Январь</td>
-                        <td>152</td>
+                        <th scope="row">1</th>
+                        <th>Январь</th>
+                        <th>152</th>
                     </tr>
                     <tr>
-                        <td scope="row">2</td>
-                        <td>Февраль</td>
-                        <td>176</td>
+                        <th scope="row">2</th>
+                        <th>Февраль</th>
+                        <th>176</th>
                     </tr>
                     <tr>
-                        <td scope="row">3</td>
-                        <td>Март</td>
-                        <td>244</td>
+                        <th scope="row">3</th>
+                        <th>Март</th>
+                        <th>244</th>
                     </tr>
                 </table> 
             </td>
@@ -372,17 +372,17 @@
         <tr>
             <td>valign</td>
             <td>
-                &lt;td valign="top | middle | bottom | baseline"&gt;...&lt;/td &gt;
+                &lt;th valign="top | middle | bottom | baseline"&gt;...&lt;/th &gt;
             </td>
             <td>
                 <table border="2" width='200' height='150'>
                     <tr>
-                        <td valign='top'>First</td>
-                        <td valign='middle'>Second</td>
+                        <th valign='top'>First</th>
+                        <th valign='middle'>Second</th>
                     </tr>
                     <tr>
-                        <td valign='bottom'>Third</td>
-                        <td valign='baseline'>Fourth</td>
+                        <th valign='bottom'>Third</th>
+                        <th valign='baseline'>Fourth</th>
                     </tr>
                 </table>
             </td>
@@ -399,17 +399,17 @@
         <tr>
             <td>width</td>
             <td>
-                &lt;td width="значение"&gt;...&lt;/td &gt;
+                &lt;th width="значение"&gt;...&lt;/th &gt;
             </td>
             <td>
                 <table border="2" height='100'>
                     <tr>
-                        <td width='75'>First</td>
-                        <td width='150'>Second</td>
+                        <th width='75'>First</th>
+                        <th width='150'>Second</th>
                     </tr>
                     <tr>
-                        <td >Third</td>
-                        <td >Fourth</td>
+                        <th >Third</th>
+                        <th >Fourth</th>
                     </tr>
                 </table>
             </td>
