@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;video&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;video&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Добавляет, воспроизводит и управляет настройками видеоролика на веб-странице. Путь к файлу задается через атрибут src или вложенный тег &lt;source&gt;.
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>autoplay</td>
+            <td>&lt;video autoplay="autoplay"&gt;...&lt;/video&gt;</td>
+            <td>
+                <video src="../../video/Установка kassist для онлайн пользователей.mp4" autoplay width="300">  
+                </video>
+            </td>
+            <td>
+                <p>При наличии этого атрибута видео начинает воспроизводиться автоматически после загрузки страницы. Атрибут autoplay отменяет действие preload.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>controls</td>
+            <td>&lt;video controls="controls"&gt;...&lt;/video&gt;</td>
+            <td>
+                <video src="../../video/Установка kassist для онлайн пользователей.mp4" controls width="300">  
+                </video>
+            </td>
+            <td>
+                <p>Добавляет панель управления к видеоролику. Вид панели и ее содержимое зависит от браузера и может в себя включать: кнопка воспроизвести, пауза, перемотка, переход в полноэкранный режим; ползунок для изменения уровня громкости и др.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>height</td>
+            <td>&lt;video controls="controls"&gt;...&lt;/video&gt;</td>
+            <td>
+                <video src="../../video/Установка kassist для онлайн пользователей.mp4" controls height="150">  
+                </video>
+            </td>
+            <td>
+                <p>Атрибут height задает высоту области для воспроизведения видеоролика. Само видео меняет свои размеры в большую или меньшую сторону, чтобы вписаться в заданные рамки, но его пропорции при этом остаются прежними.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>loop</td>
+            <td>&lt;video loop&gt;...&lt;/video&gt;</td>
+            <td>
+                <video loop src="../../video/Установка kassist для онлайн пользователей.mp4" controls height="150">  
+                </video>
+            </td>
+            <td>
+                <p>Зацикливает воспроизведение видео, оно повторяется каждый раз с начала после завершения.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>poster</td>
+            <td>&lt;video poster="URL"&gt;...&lt;/video&gt;</td>
+            <td>
+                <video poster="http://htmlbook.ru/themes/hb/img/logo.svg" src="../../video/Установка kassist для онлайн пользователей.mp4" controls width="250">  
+                </video>
+            </td>
+            <td>
+                <p>Указывает адрес картинки, которая будет отображаться, пока видео не доступно или не вопроизводится. Само изображение может быть в любом доступном формате: GIF, PNG, JPEG. Если атрибут poster не указан, браузер постарается отобразить первый кадр видео.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>preload</td>
+            <td>&lt;audio preload="none | metadata | auto"&gt;...&lt;/audio&gt;</td>
+            <td>
+                <video src="../../video/Установка kassist для онлайн пользователей.mp4" preload="metadata" width="300">  
+                </video>
+            </td>
+            <td><p>Используется для загрузки видео вместе с загрузкой веб-страницы. Этот атрибут игнорируется, если установлен autoplay.</p>
+                <dl>
+                    <dt>none</dt> <dd>Не загружать аудиофайл.</dd>
+                    <dt>metadata</dt> <dd>Загрузить только служебную информацию (продолжительность звучания и др.).</dd>
+                    <dt>auto</dt> <dd>Загрузить аудиофайл целиком при загрузке страницы.</dd>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>src</td>
+            <td>&lt;audio src="URL"&gt;...&lt;/audio&gt;</td>
+            <td>
+                <video src="../../video/Установка kassist для онлайн пользователей.mp4" controls width="300">  
+                </video>
+            </td>
+            <td>
+                <p>Указывает путь к воспроизводимому видеоролику. Для этой же цели можно использовать тег &lt;source&gt;.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td>&lt;audio src="URL"&gt;...&lt;/audio&gt;</td>
+            <td>
+                <video src="../../video/Установка kassist для онлайн пользователей.mp4" controls width="350">  
+                </video>
+            </td>
+            <td>
+                <p>Атрибут width задает ширину области для воспроизведения видеоролика. Само видео меняет свои размеры в большую или меньшую сторону, чтобы вписаться в указанную ширину, но его пропорции при этом не искажаются.</p>
+            </td>
+        </tr>
+    </table>
+
+    <h3> <a href="../../Index.html">Вернуться к тегам</a> <br> </h3>
+</body>
+</html>
