@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тег &lt;track&gt;</title>
+    <link href="../../Public/CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" rel="icon">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/HTMLProject/Images/43471.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тег &lt;track&gt;</h1>
+    <h3>Описание</h3>
+    <p>
+        Позволяет авторам указать текстовую дорожку для медийных элементов &lt;audio&gt; и &lt;video&gt;. Такая дорожка обычно содержит субтитры на разных языках, комментарии, заголовки и др.
+    </p>
+    <h3>Атрибуты</h3>
+    <table border="4" bordercolor='black' cellpadding="5" cellspacing="1">
+        <col width="100">
+        <col span="2" width="400">
+        <col width="1000" align="center">
+        <tr>
+            <td>...</td>
+            <td>
+                &lt;audio&gt; <br>
+                    &lt;track kind | src | srclang | label | default&gt;<br>
+                &lt;/audio&gt; <br><br>     
+                &lt;video&gt; <br>
+                    &lt;track kind | src | srclang | label | default&gt;<br>
+                &lt;/video&gt; <br><br>     
+            </td>
+            <td>
+                <video width="300" height="400" controls>
+                    <source src="../../video/Установка kassist для онлайн пользователей.mp4" type='video/mp4;'>
+                    <track kind="subtitles" src="../../video/Установка kassist для онлайн пользователей.mp4" srclang="ru" label="Русский">
+                    Тег video не поддерживается вашим браузером.
+                </video>
+            </td>
+            <td>
+                <p>Атрибуты:</p>
+                <dl>
+                    <dt>kind</dt> <dd>Указывает тип дорожки.</dd>
+                    <dt>src</dt> <dd>Путь к файлу с дорожкой.</dd>
+                    <dt>srclang</dt> <dd>Язык дорожки. См. коды языков.</dd>
+                    <dt>label</dt> <dd>Отображаемое название дорожки. Если этот атрибут не указан, браузер станет использовать значение, которое применяется у него по умолчанию, например «untitled1».</dd>
+                    <dt>default</dt> <dd>Наличие этого атрибута указывает, что данная дорожка предпочтительна и должна быть выбрана по умолчанию. Только одна дорожка может иметь атрибут default.</dd>
+                </dl>
+                <table border="1" bordercolor='black' cellspacing='0' cellpadding='2'>
+                    <caption style="font: italic 1em Georgia,Times,serif; text-align: right; color: #666; margin: 0.5em 0;"><em>Табл. Значения атрибута kind</em></caption>
+                    <tr bgcolor='#BFBFBF'>
+                        <th>Значение</th>
+                        <th>Предназначение</th>
+                        <th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td>subtitles</td>
+                        <td>Субтитры</td>
+                        <td>Предназначены для дублирования звуковой дорожки фильма в виде текста на языке оригинала для глухих людей. Также могут содержать перевод на другие языки для тех, кто не знаком с языком оригинала. Текст субтитров выводится поверх видео.</td>
+                    </tr>
+                    <tr>
+                        <td>captions</td>
+                        <td>Заголовки</td>
+                        <td>Дублирование диалогов, звуковых эффектов, музыкального сопровождения в виде текста для тех случаев, когда звук недоступен или для глухих пользователей. Выводится поверх видео, при этом помечается, что подходит для плохо слышащих людей.</td>
+                    </tr>
+                    <tr>
+                        <td>descriptions</td>
+                        <td>Описание</td>
+                        <td>Звуковое описание происходящего в видео для тех случаев, когда изображение недоступно или для слепых людей.</td>
+                    </tr>
+                    <tr>
+                        <td>chapters</td>
+                        <td>Главы</td>
+                        <td>Названия глав используемые для быстрой навигации по видео или аудио. Отображаются в виде списка.</td>
+                    </tr>
+                    <tr>
+                        <td>metadata</td>
+                        <td>Метаданные</td>
+                        <td>Предназначены для использования скриптами и не отображаются в браузере.</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <h3> <a  href="../../Index.html" title="Возврат на главную страницу">Вернуться к тегам</a></button> </h3>
+</body>
+
+</html>
